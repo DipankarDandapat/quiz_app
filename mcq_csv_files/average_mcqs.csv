@@ -1,0 +1,200 @@
+Question,Option A,Option B,Option C,Option D,Correct Answer
+The average of first five natural numbers is:,2,3,4,5,b
+The average of first five even numbers is:,4,5,6,7,c
+The average of first five odd numbers is:,3,4,5,6,c
+"The average of 5, 10, 15, 20, 25 is:",10,15,20,25,b
+The average of first ten natural numbers is:,5,5.5,6,6.5,b
+The average of first ten even numbers is:,10,11,12,13,b
+The average of first ten odd numbers is:,9,10,11,12,b
+"The average of 2, 4, 6, 8, 10, 12 is:",6,7,8,9,b
+The average of first fifteen natural numbers is:,7,7.5,8,8.5,c
+The average of first fifteen even numbers is:,14,15,16,17,c
+The average of first fifteen odd numbers is:,14,15,16,17,b
+"The average of 1, 3, 5, 7, 9, 11, 13 is:",6,7,8,9,b
+The average of first twenty natural numbers is:,10,10.5,11,11.5,b
+The average of first twenty even numbers is:,20,21,22,23,b
+The average of first twenty odd numbers is:,19,20,21,22,b
+"The average of 10, 20, 30, 40, 50 is:",20,30,40,50,b
+The average of first twenty-five natural numbers is:,12,12.5,13,13.5,b
+The average of first twenty-five even numbers is:,24,25,26,27,c
+The average of first twenty-five odd numbers is:,24,25,26,27,b
+"The average of 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 is:",5,5.5,6,6.5,b
+The average of first thirty natural numbers is:,15,15.5,16,16.5,b
+The average of first thirty even numbers is:,30,31,32,33,b
+The average of first thirty odd numbers is:,29,30,31,32,b
+"The average of 15, 20, 25, 30, 35 is:",20,25,30,35,c
+The average of first thirty-five natural numbers is:,17,17.5,18,18.5,b
+The average of first thirty-five even numbers is:,34,35,36,37,c
+The average of first thirty-five odd numbers is:,34,35,36,37,b
+"The average of 2, 3, 5, 7, 11 is:",5,5.6,6,6.2,b
+The average of first forty natural numbers is:,20,20.5,21,21.5,b
+The average of first forty even numbers is:,40,41,42,43,b
+The average of first forty odd numbers is:,39,40,41,42,b
+"The average of 20, 25, 30, 35, 40 is:",25,30,35,40,b
+The average of first forty-five natural numbers is:,22,22.5,23,23.5,b
+The average of first forty-five even numbers is:,44,45,46,47,b
+The average of first forty-five odd numbers is:,44,45,46,47,b
+"The average of 3, 5, 7, 9, 11, 13, 15 is:",8,9,10,11,b
+The average of first fifty natural numbers is:,25,25.5,26,26.5,b
+The average of first fifty even numbers is:,50,51,52,53,b
+The average of first fifty odd numbers is:,49,50,51,52,b
+"The average of 25, 30, 35, 40, 45 is:",30,35,40,45,b
+The average of first fifty-five natural numbers is:,27,27.5,28,28.5,b
+The average of first fifty-five even numbers is:,54,55,56,57,b
+The average of first fifty-five odd numbers is:,54,55,56,57,b
+"The average of 4, 6, 8, 10, 12, 14 is:",8,9,10,11,b
+The average of first sixty natural numbers is:,30,30.5,31,31.5,b
+The average of first sixty even numbers is:,60,61,62,63,b
+The average of first sixty odd numbers is:,59,60,61,62,b
+"The average of 30, 35, 40, 45, 50 is:",35,40,45,50,b
+The average of first sixty-five natural numbers is:,32,32.5,33,33.5,b
+The average of first sixty-five even numbers is:,64,65,66,67,b
+The average of first sixty-five odd numbers is:,64,65,66,67,b
+"The average of 5, 7, 9, 11, 13, 15, 17 is:",10,11,12,13,b
+The average of first seventy natural numbers is:,35,35.5,36,36.5,b
+The average of first seventy even numbers is:,70,71,72,73,b
+The average of first seventy odd numbers is:,69,70,71,72,b
+"The average of 35, 40, 45, 50, 55 is:",40,45,50,55,b
+The average of first seventy-five natural numbers is:,37,37.5,38,38.5,b
+The average of first seventy-five even numbers is:,74,75,76,77,b
+The average of first seventy-five odd numbers is:,74,75,76,77,b
+"The average of 6, 8, 10, 12, 14, 16 is:",10,11,12,13,b
+The average of first eighty natural numbers is:,40,40.5,41,41.5,b
+The average of first eighty even numbers is:,80,81,82,83,b
+The average of first eighty odd numbers is:,79,80,81,82,b
+"The average of 40, 45, 50, 55, 60 is:",45,50,55,60,b
+The average of first eighty-five natural numbers is:,42,42.5,43,43.5,b
+The average of first eighty-five even numbers is:,84,85,86,87,b
+The average of first eighty-five odd numbers is:,84,85,86,87,b
+"The average of 7, 9, 11, 13, 15, 17, 19 is:",12,13,14,15,b
+The average of first ninety natural numbers is:,45,45.5,46,46.5,b
+The average of first ninety even numbers is:,90,91,92,93,b
+The average of first ninety odd numbers is:,89,90,91,92,b
+"The average of 45, 50, 55, 60, 65 is:",50,55,60,65,b
+The average of first ninety-five natural numbers is:,47,47.5,48,48.5,b
+The average of first ninety-five even numbers is:,94,95,96,97,b
+The average of first ninety-five odd numbers is:,94,95,96,97,b
+"The average of 8, 10, 12, 14, 16, 18 is:",12,13,14,15,b
+The average of first one hundred natural numbers is:,50,50.5,51,51.5,b
+The average of first one hundred even numbers is:,100,101,102,103,b
+The average of first one hundred odd numbers is:,99,100,101,102,b
+"The average of 50, 55, 60, 65, 70 is:",55,60,65,70,b
+The average of first one hundred five natural numbers is:,52,52.5,53,53.5,b
+The average of first one hundred five even numbers is:,104,105,106,107,b
+The average of first one hundred five odd numbers is:,104,105,106,107,b
+"The average of 9, 11, 13, 15, 17, 19, 21 is:",14,15,16,17,b
+The average of first one hundred ten natural numbers is:,55,55.5,56,56.5,b
+The average of first one hundred ten even numbers is:,110,111,112,113,b
+The average of first one hundred ten odd numbers is:,109,110,111,112,b
+"The average of 55, 60, 65, 70, 75 is:",60,65,70,75,b
+The average of first one hundred fifteen natural numbers is:,57,57.5,58,58.5,b
+The average of first one hundred fifteen even numbers is:,114,115,116,117,b
+The average of first one hundred fifteen odd numbers is:,114,115,116,117,b
+"The average of 10, 12, 14, 16, 18, 20 is:",14,15,16,17,b
+The average of first one hundred twenty natural numbers is:,60,60.5,61,61.5,b
+The average of first one hundred twenty even numbers is:,120,121,122,123,b
+The average of first one hundred twenty odd numbers is:,119,120,121,122,b
+"The average of 60, 65, 70, 75, 80 is:",65,70,75,80,b
+The average of first one hundred twenty-five natural numbers is:,62,62.5,63,63.5,b
+The average of first one hundred twenty-five even numbers is:,124,125,126,127,b
+The average of first one hundred twenty-five odd numbers is:,124,125,126,127,b
+"The average of 11, 13, 15, 17, 19, 21, 23 is:",16,17,18,19,b
+The average of first one hundred thirty natural numbers is:,65,65.5,66,66.5,b
+The average of first one hundred thirty even numbers is:,130,131,132,133,b
+The average of first one hundred thirty odd numbers is:,129,130,131,132,b
+"The average of 65, 70, 75, 80, 85 is:",70,75,80,85,b
+The average of first one hundred thirty-five natural numbers is:,67,67.5,68,68.5,b
+The average of first one hundred thirty-five even numbers is:,134,135,136,137,b
+The average of first one hundred thirty-five odd numbers is:,134,135,136,137,b
+"The average of 12, 14, 16, 18, 20, 22 is:",16,17,18,19,b
+The average of first one hundred forty natural numbers is:,70,70.5,71,71.5,b
+The average of first one hundred forty even numbers is:,140,141,142,143,b
+The average of first one hundred forty odd numbers is:,139,140,141,142,b
+"The average of 70, 75, 80, 85, 90 is:",75,80,85,90,b
+The average of first one hundred forty-five natural numbers is:,72,72.5,73,73.5,b
+The average of first one hundred forty-five even numbers is:,144,145,146,147,b
+The average of first one hundred forty-five odd numbers is:,144,145,146,147,b
+"The average of 13, 15, 17, 19, 21, 23, 25 is:",18,19,20,21,b
+The average of first one hundred fifty natural numbers is:,75,75.5,76,76.5,b
+The average of first one hundred fifty even numbers is:,150,151,152,153,b
+The average of first one hundred fifty odd numbers is:,149,150,151,152,b
+"The average of 75, 80, 85, 90, 95 is:",80,85,90,95,b
+The average of first one hundred fifty-five natural numbers is:,77,77.5,78,78.5,b
+The average of first one hundred fifty-five even numbers is:,154,155,156,157,b
+The average of first one hundred fifty-five odd numbers is:,154,155,156,157,b
+"The average of 14, 16, 18, 20, 22, 24 is:",18,19,20,21,b
+The average of first one hundred sixty natural numbers is:,80,80.5,81,81.5,b
+The average of first one hundred sixty even numbers is:,160,161,162,163,b
+The average of first one hundred sixty odd numbers is:,159,160,161,162,b
+"The average of 80, 85, 90, 95, 100 is:",85,90,95,100,b
+The average of first one hundred sixty-five natural numbers is:,82,82.5,83,83.5,b
+The average of first one hundred sixty-five even numbers is:,164,165,166,167,b
+The average of first one hundred sixty-five odd numbers is:,164,165,166,167,b
+"The average of 15, 17, 19, 21, 23, 25, 27 is:",20,21,22,23,b
+The average of first one hundred seventy natural numbers is:,85,85.5,86,86.5,b
+The average of first one hundred seventy even numbers is:,170,171,172,173,b
+The average of first one hundred seventy odd numbers is:,169,170,171,172,b
+"The average of 85, 90, 95, 100, 105 is:",90,95,100,105,b
+The average of first one hundred seventy-five natural numbers is:,87,87.5,88,88.5,b
+The average of first one hundred seventy-five even numbers is:,174,175,176,177,b
+The average of first one hundred seventy-five odd numbers is:,174,175,176,177,b
+"The average of 16, 18, 20, 22, 24, 26 is:",20,21,22,23,b
+The average of first one hundred eighty natural numbers is:,90,90.5,91,91.5,b
+The average of first one hundred eighty even numbers is:,180,181,182,183,b
+The average of first one hundred eighty odd numbers is:,179,180,181,182,b
+"The average of 90, 95, 100, 105, 110 is:",95,100,105,110,b
+The average of first one hundred eighty-five natural numbers is:,92,92.5,93,93.5,b
+The average of first one hundred eighty-five even numbers is:,184,185,186,187,b
+The average of first one hundred eighty-five odd numbers is:,184,185,186,187,b
+"The average of 17, 19, 21, 23, 25, 27, 29 is:",22,23,24,25,b
+The average of first one hundred ninety natural numbers is:,95,95.5,96,96.5,b
+The average of first one hundred ninety even numbers is:,190,191,192,193,b
+The average of first one hundred ninety odd numbers is:,189,190,191,192,b
+"The average of 95, 100, 105, 110, 115 is:",100,105,110,115,b
+The average of first one hundred ninety-five natural numbers is:,97,97.5,98,98.5,b
+The average of first one hundred ninety-five even numbers is:,194,195,196,197,b
+The average of first one hundred ninety-five odd numbers is:,194,195,196,197,b
+"The average of 18, 20, 22, 24, 26, 28 is:",22,23,24,25,b
+The average of first two hundred natural numbers is:,100,100.5,101,101.5,b
+The average of first two hundred even numbers is:,200,201,202,203,b
+The average of first two hundred odd numbers is:,199,200,201,202,b
+"The average of 100, 105, 110, 115, 120 is:",105,110,115,120,b
+The average of first two hundred five natural numbers is:,102,102.5,103,103.5,b
+The average of first two hundred five even numbers is:,204,205,206,207,b
+The average of first two hundred five odd numbers is:,204,205,206,207,b
+"The average of 19, 21, 23, 25, 27, 29, 31 is:",24,25,26,27,b
+The average of first two hundred ten natural numbers is:,105,105.5,106,106.5,b
+The average of first two hundred ten even numbers is:,210,211,212,213,b
+The average of first two hundred ten odd numbers is:,209,210,211,212,b
+"The average of 105, 110, 115, 120, 125 is:",110,115,120,125,b
+The average of first two hundred fifteen natural numbers is:,107,107.5,108,108.5,b
+The average of first two hundred fifteen even numbers is:,214,215,216,217,b
+The average of first two hundred fifteen odd numbers is:,214,215,216,217,b
+"The average of 20, 22, 24, 26, 28, 30 is:",25,26,27,28,b
+The average of first two hundred twenty natural numbers is:,110,110.5,111,111.5,b
+The average of first two hundred twenty even numbers is:,220,221,222,223,b
+The average of first two hundred twenty odd numbers is:,219,220,221,222,b
+"The average of 110, 115, 120, 125, 130 is:",115,120,125,130,b
+The average of first two hundred twenty-five natural numbers is:,112,112.5,113,113.5,b
+The average of first two hundred twenty-five even numbers is:,224,225,226,227,b
+The average of first two hundred twenty-five odd numbers is:,224,225,226,227,b
+"The average of 21, 23, 25, 27, 29, 31, 33 is:",26,27,28,29,b
+The average of first two hundred thirty natural numbers is:,115,115.5,116,116.5,b
+The average of first two hundred thirty even numbers is:,230,231,232,233,b
+The average of first two hundred thirty odd numbers is:,229,230,231,232,b
+"The average of 115, 120, 125, 130, 135 is:",120,125,130,135,b
+The average of first two hundred thirty-five natural numbers is:,117,117.5,118,118.5,b
+The average of first two hundred thirty-five even numbers is:,234,235,236,237,b
+The average of first two hundred thirty-five odd numbers is:,234,235,236,237,b
+"The average of 22, 24, 26, 28, 30, 32 is:",27,28,29,30,b
+The average of first two hundred forty natural numbers is:,120,120.5,121,121.5,b
+The average of first two hundred forty even numbers is:,240,241,242,243,b
+The average of first two hundred forty odd numbers is:,239,240,241,242,b
+"The average of 120, 125, 130, 135, 140 is:",125,130,135,140,b
+The average of first two hundred forty-five natural numbers is:,122,122.5,123,123.5,b
+The average of first two hundred forty-five even numbers is:,244,245,246,247,b
+The average of first two hundred forty-five odd numbers is:,244,245,246,247,b
+"The average of 23, 25, 27, 29, 31, 33, 35 is:",28,29,30,31,b
+The average of first two hundred fifty natural numbers is:,125,125.5,126,126.5,b
+The average of first two hundred fifty even numbers is:,250,251,252,253,b
+The average of first two hundred fifty odd numbers is:,249,250,251,252,b

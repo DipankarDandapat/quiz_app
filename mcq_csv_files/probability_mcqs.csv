@@ -1,0 +1,200 @@
+Question,Option A,Option B,Option C,Option D,Correct Answer
+"In a single throw of a die, what is the probability of getting an even number?",1/6,1/3,1/2,2/3,c
+A coin is tossed twice. What is the probability of getting at least one head?,1/4,1/2,3/4,1,c
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a king?,1/13,1/26,1/52,4/13,a
+"A bag contains 4 white, 5 red and 6 blue balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not white?",4/15,11/15,1/3,2/5,b
+Two dice are thrown simultaneously. What is the probability of getting a sum of 7?,1/6,1/12,1/9,1/18,a
+A coin is tossed three times. What is the probability of getting exactly two heads?,1/8,3/8,1/2,5/8,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red card?,1/4,1/2,3/4,1,b
+A bag contains 5 green and 7 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is yellow?,5/12,7/12,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number greater than 4?",1/6,1/3,1/2,2/3,b
+A coin is tossed four times. What is the probability of getting no heads?,1/16,1/8,1/4,1/2,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a face card?,3/13,4/13,6/13,1/13,a
+"A bag contains 6 black, 8 white and 10 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not black?",6/24,18/24,1/4,3/4,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 10?,1/12,1/18,1/36,1/9,b
+A coin is tossed five times. What is the probability of getting exactly three heads?,5/16,10/32,1/2,3/8,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a spade?,1/4,1/2,3/4,1/13,a
+A bag contains 7 red and 9 blue balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is red?,7/16,9/16,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting an odd number?",1/6,1/3,1/2,2/3,c
+A coin is tossed six times. What is the probability of getting at least one tail?,1/64,63/64,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a queen?,1/13,1/26,1/52,4/13,a
+"A bag contains 8 orange, 10 purple and 12 pink balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not orange?",8/30,22/30,4/15,11/15,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 11?,1/12,1/18,1/36,1/9,b
+A coin is tossed seven times. What is the probability of getting exactly four heads?,35/128,21/128,7/128,1/128,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black card?,1/4,1/2,3/4,1,b
+A bag contains 9 brown and 11 grey balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is grey?,9/20,11/20,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 3?",1/6,1/3,1/2,2/3,b
+A coin is tossed eight times. What is the probability of getting no tails?,1/256,1/128,1/64,1/32,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a heart?,1/4,1/2,3/4,1/13,a
+"A bag contains 10 white, 12 black and 14 red balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not white?",10/36,26/36,5/18,13/18,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 8?,5/36,1/9,1/12,1/18,a
+A coin is tossed nine times. What is the probability of getting exactly five heads?,63/256,126/512,1/2,5/9,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a diamond?,1/4,1/2,3/4,1/13,a
+A bag contains 11 blue and 13 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is blue?,11/24,13/24,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number divisible by 3?",1/6,1/3,1/2,2/3,b
+A coin is tossed ten times. What is the probability of getting at least one head?,1/1024,1023/1024,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a club?,1/4,1/2,3/4,1/13,a
+"A bag contains 12 red, 14 black and 16 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",12/42,30/42,2/7,5/7,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 9?,1/9,1/12,1/18,1/36,b
+A coin is tossed eleven times. What is the probability of getting exactly six heads?,231/2048,462/4096,1/2,6/11,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is an ace?,1/13,1/26,1/52,4/13,a
+A bag contains 13 yellow and 15 orange balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is orange?,13/28,15/28,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a prime number?",1/6,1/3,1/2,2/3,c
+A coin is tossed twelve times. What is the probability of getting no heads?,1/4096,1/2048,1/1024,1/512,a
+"A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a picture card (King, Queen, Jack)?",3/13,4/13,6/13,1/13,a
+"A bag contains 14 green, 16 blue and 18 pink balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not green?",14/48,34/48,7/24,17/24,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 6?,5/36,1/9,1/12,1/18,a
+A coin is tossed thirteen times. What is the probability of getting exactly seven heads?,429/8192,858/16384,1/2,7/13,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red king?,1/13,1/26,1/52,2/13,b
+A bag contains 15 red and 17 blue balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is blue?,15/32,17/32,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a composite number?",1/6,1/3,1/2,2/3,b
+A coin is tossed fourteen times. What is the probability of getting at least one tail?,1/16384,16383/16384,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black queen?,1/13,1/26,1/52,2/13,b
+"A bag contains 16 white, 18 black and 20 red balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not black?",18/54,36/54,1/3,2/3,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 5?,1/9,1/12,1/18,1/36,a
+A coin is tossed fifteen times. What is the probability of getting exactly eight heads?,6435/32768,12870/65536,1/2,8/15,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red ace?,1/13,1/26,1/52,2/13,b
+A bag contains 17 orange and 19 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is orange?,17/36,19/36,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 5?",1/6,1/3,1/2,2/3,d
+A coin is tossed sixteen times. What is the probability of getting no tails?,1/65536,1/32768,1/16384,1/8192,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black king?,1/13,1/26,1/52,2/13,b
+"A bag contains 18 brown, 20 grey and 22 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",18/60,42/60,3/10,7/10,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 4?,1/9,1/12,1/18,1/36,c
+A coin is tossed seventeen times. What is the probability of getting exactly nine heads?,24310/131072,48620/262144,1/2,9/17,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red queen?,1/13,1/26,1/52,2/13,b
+A bag contains 19 blue and 21 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is green?,19/40,21/40,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number greater than 2?",1/6,1/3,1/2,2/3,d
+A coin is tossed eighteen times. What is the probability of getting at least one head?,1/262144,262143/262144,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black ace?,1/13,1/26,1/52,2/13,b
+"A bag contains 20 red, 22 black and 24 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",20/66,46/66,10/33,23/33,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 3?,1/9,1/12,1/18,1/36,c
+A coin is tossed nineteen times. What is the probability of getting exactly ten heads?,92378/524288,184756/1048576,1/2,10/19,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red jack?,1/13,1/26,1/52,2/13,b
+A bag contains 21 yellow and 23 orange balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is yellow?,21/44,23/44,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 6?",1/6,1/3,1/2,5/6,d
+A coin is tossed twenty times. What is the probability of getting no heads?,1/1048576,1/524288,1/262144,1/131072,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black jack?,1/13,1/26,1/52,2/13,b
+"A bag contains 22 green, 24 blue and 26 pink balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not green?",22/72,50/72,11/36,25/36,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 2?,1/9,1/12,1/18,1/36,d
+A coin is tossed twenty-one times. What is the probability of getting exactly eleven heads?,352716/2097152,705432/4194304,1/2,11/21,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red ten?,1/13,1/26,1/52,2/13,b
+A bag contains 23 red and 25 blue balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is red?,23/48,25/48,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 4?",1/6,1/3,1/2,2/3,d
+A coin is tossed twenty-two times. What is the probability of getting at least one tail?,1/4194304,4194303/4194304,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black ten?,1/13,1/26,1/52,2/13,b
+"A bag contains 24 white, 26 black and 28 red balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not white?",24/78,54/78,4/13,9/13,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 12?,1/9,1/12,1/18,1/36,d
+A coin is tossed twenty-three times. What is the probability of getting exactly twelve heads?,1352078/8388608,2704156/16777216,1/2,12/23,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red nine?,1/13,1/26,1/52,2/13,b
+A bag contains 25 orange and 27 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is orange?,25/52,27/52,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number greater than 3?",1/6,1/3,1/2,2/3,c
+A coin is tossed twenty-four times. What is the probability of getting no tails?,1/16777216,1/8388608,1/4194304,1/2097152,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black nine?,1/13,1/26,1/52,2/13,b
+"A bag contains 26 brown, 28 grey and 30 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",26/84,58/84,13/42,29/42,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 1?,0,1/36,1/18,1/12,a
+A coin is tossed twenty-five times. What is the probability of getting exactly thirteen heads?,5200300/33554432,10400600/67108864,1/2,13/25,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red eight?,1/13,1/26,1/52,2/13,b
+A bag contains 27 blue and 29 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is green?,27/56,29/56,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 1?",0,1/6,1/2,1,a
+A coin is tossed twenty-six times. What is the probability of getting at least one head?,1/67108864,67108863/67108864,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black eight?,1/13,1/26,1/52,2/13,b
+"A bag contains 28 red, 30 black and 32 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",28/90,62/90,14/45,31/45,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 13?,0,1/36,1/18,1/12,a
+A coin is tossed twenty-seven times. What is the probability of getting exactly fourteen heads?,1736280/134217728,3472560/268435456,1/2,14/27,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red seven?,1/13,1/26,1/52,2/13,b
+A bag contains 29 orange and 31 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is purple?,29/60,31/60,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 2?",1/6,1/3,1/2,2/3,a
+A coin is tossed twenty-eight times. What is the probability of getting no tails?,1/268435456,1/134217728,1/67108864,1/33554432,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black seven?,1/13,1/26,1/52,2/13,b
+"A bag contains 30 brown, 32 grey and 34 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",30/96,66/96,5/16,11/16,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 14?,0,1/36,1/18,1/12,a
+A coin is tossed twenty-nine times. What is the probability of getting exactly fifteen heads?,2003001/268435456,4006002/536870912,1/2,15/29,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red six?,1/13,1/26,1/52,2/13,b
+A bag contains 31 blue and 33 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is blue?,31/64,33/64,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 0?",0,1/6,1/2,1,a
+A coin is tossed thirty times. What is the probability of getting at least one head?,1/1073741824,1073741823/1073741824,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black six?,1/13,1/26,1/52,2/13,b
+"A bag contains 32 red, 34 black and 36 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",32/102,70/102,16/51,35/51,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 0?,0,1/36,1/18,1/12,a
+A coin is tossed thirty-one times. What is the probability of getting exactly sixteen heads?,601080390/2147483648,1202160780/4294967296,1/2,16/31,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red five?,1/13,1/26,1/52,2/13,b
+A bag contains 33 orange and 35 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is orange?,33/68,35/68,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 5?",1/6,1/3,1/2,2/3,d
+A coin is tossed thirty-two times. What is the probability of getting no heads?,1/4294967296,1/2147483648,1/1073741824,1/536870912,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black five?,1/13,1/26,1/52,2/13,b
+"A bag contains 34 brown, 36 grey and 38 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",34/108,74/108,17/54,37/54,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 15?,0,1/36,1/18,1/12,a
+A coin is tossed thirty-three times. What is the probability of getting exactly seventeen heads?,2333606220/8589934592,4667212440/17179869184,1/2,17/33,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red four?,1/13,1/26,1/52,2/13,b
+A bag contains 35 blue and 37 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is green?,35/72,37/72,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 3?",1/6,1/3,1/2,2/3,b
+A coin is tossed thirty-four times. What is the probability of getting at least one tail?,1/17179869184,17179869183/17179869184,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black four?,1/13,1/26,1/52,2/13,b
+"A bag contains 36 red, 38 black and 40 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",36/114,78/114,6/19,13/19,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 16?,0,1/36,1/18,1/12,a
+A coin is tossed thirty-five times. What is the probability of getting exactly eighteen heads?,387080800/68719476736,774161600/137438953472,1/2,18/35,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red three?,1/13,1/26,1/52,2/13,b
+A bag contains 37 orange and 39 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is purple?,37/76,39/76,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 0?",0,1/6,1/2,1,a
+A coin is tossed thirty-six times. What is the probability of getting no heads?,1/68719476736,1/34359738368,1/17179869184,1/8589934592,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black three?,1/13,1/26,1/52,2/13,b
+"A bag contains 38 brown, 40 grey and 42 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",38/120,82/120,19/60,41/60,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 17?,0,1/36,1/18,1/12,a
+A coin is tossed thirty-seven times. What is the probability of getting exactly nineteen heads?,678639150/274877906944,1357278300/549755813888,1/2,19/37,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red two?,1/13,1/26,1/52,2/13,b
+A bag contains 39 blue and 41 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is blue?,39/80,41/80,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 5?",1/6,1/3,1/2,2/3,d
+A coin is tossed thirty-eight times. What is the probability of getting at least one tail?,1/274877906944,274877906943/274877906944,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black two?,1/13,1/26,1/52,2/13,b
+"A bag contains 40 red, 42 black and 44 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",40/126,86/126,20/63,43/63,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 18?,0,1/36,1/18,1/12,a
+A coin is tossed thirty-nine times. What is the probability of getting exactly twenty heads?,1166803110/1099511627776,2333606220/2199023255552,1/2,20/39,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red ace?,1/13,1/26,1/52,2/13,b
+A bag contains 41 orange and 43 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is orange?,41/84,43/84,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 6?",1/6,1/3,1/2,5/6,d
+A coin is tossed forty times. What is the probability of getting no tails?,1/1099511627776,1/549755813888,1/274877906944,1/137438953472,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black ace?,1/13,1/26,1/52,2/13,b
+"A bag contains 42 brown, 44 grey and 46 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",42/132,90/132,7/22,15/22,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 19?,0,1/36,1/18,1/12,a
+A coin is tossed forty-one times. What is the probability of getting exactly twenty-one heads?,1300000000/4398046511104,2600000000/8796093022208,1/2,21/41,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red king?,1/13,1/26,1/52,2/13,b
+A bag contains 43 blue and 45 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is green?,43/88,45/88,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 0?",0,1/6,1/2,1,a
+A coin is tossed forty-two times. What is the probability of getting at least one head?,1/4398046511104,4398046511103/4398046511104,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black king?,1/13,1/26,1/52,2/13,b
+"A bag contains 44 red, 46 black and 48 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",44/138,94/138,22/69,47/69,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 20?,0,1/36,1/18,1/12,a
+A coin is tossed forty-three times. What is the probability of getting exactly twenty-two heads?,1400000000/17592186044416,2800000000/35184372088832,1/2,22/43,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red queen?,1/13,1/26,1/52,2/13,b
+A bag contains 45 orange and 47 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is purple?,45/92,47/92,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 1?",0,1/6,1/2,1,a
+A coin is tossed forty-four times. What is the probability of getting no heads?,1/17592186044416,1/8796093022208,1/4398046511104,1/2199023255552,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black queen?,1/13,1/26,1/52,2/13,b
+"A bag contains 46 brown, 48 grey and 50 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",46/144,98/144,23/72,49/72,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 21?,0,1/36,1/18,1/12,a
+A coin is tossed forty-five times. What is the probability of getting exactly twenty-three heads?,1500000000/70368744177664,3000000000/140737488355328,1/2,23/45,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red jack?,1/13,1/26,1/52,2/13,b
+A bag contains 47 blue and 49 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is blue?,47/96,49/96,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 0?",0,1/6,1/2,1,a
+A coin is tossed forty-six times. What is the probability of getting at least one tail?,1/140737488355328,140737488355327/140737488355328,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black jack?,1/13,1/26,1/52,2/13,b
+"A bag contains 48 red, 50 black and 52 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",48/150,102/150,8/25,17/25,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 22?,0,1/36,1/18,1/12,a
+A coin is tossed forty-seven times. What is the probability of getting exactly twenty-four heads?,1600000000/281474976710656,3200000000/562949953421312,1/2,24/47,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red ten?,1/13,1/26,1/52,2/13,b
+A bag contains 49 orange and 51 purple balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is purple?,49/100,51/100,1/2,1/4,b
+"In a single throw of a die, what is the probability of getting a number less than 0?",0,1/6,1/2,1,a
+A coin is tossed forty-eight times. What is the probability of getting no tails?,1/281474976710656,1/140737488355328,1/70368744177664,1/35184372088832,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black ten?,1/13,1/26,1/52,2/13,b
+"A bag contains 50 brown, 52 grey and 54 yellow balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not brown?",50/156,106/156,25/78,53/78,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 23?,0,1/36,1/18,1/12,a
+A coin is tossed forty-nine times. What is the probability of getting exactly twenty-five heads?,1700000000/1125899906842624,3400000000/2251799813685248,1/2,25/49,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red nine?,1/13,1/26,1/52,2/13,b
+A bag contains 51 blue and 53 green balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is blue?,51/104,53/104,1/2,1/4,a
+"In a single throw of a die, what is the probability of getting a number less than 0?",0,1/6,1/2,1,a
+A coin is tossed fifty times. What is the probability of getting at least one tail?,1/1125899906842624,1125899906842623/1125899906842624,1/2,1,b
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a black nine?,1/13,1/26,1/52,2/13,b
+"A bag contains 52 red, 54 black and 56 white balls. A ball is drawn at random from the bag. What is the probability that the ball drawn is not red?",52/162,110/162,26/81,55/81,d
+Two dice are thrown simultaneously. What is the probability of getting a sum of 24?,0,1/36,1/18,1/12,a
+A coin is tossed fifty-one times. What is the probability of getting exactly twenty-six heads?,1800000000/4503599627370496,3600000000/9007199254740992,1/2,26/51,a
+A card is drawn from a well-shuffled deck of 52 cards. What is the probability that the card drawn is a red eight?,1/13,1/26,1/52,2/13,b

@@ -1,0 +1,151 @@
+Question,Option A,Option B,Option C,Option D,Correct Answer
+In how many ways can the letters of the word 'APPLE' be arranged?,60,120,30,24,a
+"How many different 3-digit numbers can be formed using the digits 1, 2, 3, 4, 5 without repetition?",60,120,20,10,a
+In how many ways can 5 distinct books be arranged on a shelf?,24,60,120,720,c
+A committee of 3 members is to be formed from a group of 5 men and 4 women. In how many ways can the committee be formed if it must consist of 2 men and 1 woman?,20,40,60,80,b
+How many different words can be formed using all the letters of the word 'MATHEMATICS'?,11!,11! / (2! * 2! * 2!),11! / (2! * 2!),11! / 2!,b
+In how many ways can 4 boys and 3 girls be arranged in a row such that no two girls sit together?,144,720,576,288,c
+"How many different 4-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5 without repetition?",360,300,240,120,b
+In how many ways can 6 people be seated around a circular table?,720,120,60,24,b
+"From a group of 7 men and 6 women, a committee of 5 members is to be formed. In how many ways can this be done if the committee must contain at least 3 men?",560,756,931,1001,c
+How many different arrangements can be made from the letters of the word 'ENGINEERING'?,11! / (3! * 3! * 2!),11! / (3! * 2!),11! / (3! * 3!),11! / 3!,a
+In how many ways can 5 different rings be worn on 4 fingers?,5^4,4^5,"P(5,4)","C(5,4)",b
+"How many different signals can be made by hoisting 3 red, 4 yellow, and 2 blue flags on a pole?",1260,2520,630,5040,a
+In how many ways can 7 students be arranged in a row if 2 particular students must always sit together?,720,1440,5040,10080,b
+A bag contains 5 red and 3 black balls. In how many ways can 2 red and 1 black ball be chosen?,10,15,30,45,c
+How many different words can be formed using the letters of the word 'ASSASSINATION'?,13! / (3! * 4! * 2!),13! / (3! * 4!),13! / (3! * 2!),13! / 4!,a
+In how many ways can 8 persons be seated around a circular table if 2 particular persons must always sit together?,720,1440,5040,10080,b
+"How many different 5-digit numbers can be formed using the digits 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",15120,30240,60480,120960,a
+A box contains 6 apples and 4 oranges. In how many ways can 3 fruits be selected if at least 2 apples must be selected?,60,80,100,120,b
+In how many ways can the letters of the word 'MISSISSIPPI' be arranged?,34650,34650 / 2,34650 * 2,34650 / 4,a
+"How many different 3-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5 with repetition allowed?",180,216,250,300,a
+In how many ways can 10 books be arranged on a shelf if 3 particular books must always be together?,8! * 3!,10! / 3!,7! * 3!,10! - 3!,a
+A team of 11 players is to be selected from a group of 15 players. In how many ways can this be done?,1365,1001,455,3003,a
+How many different words can be formed using all the letters of the word 'ALLAHABAD'?,9! / (4! * 2!),9! / 4!,9! / 2!,9!,a
+In how many ways can 5 boys and 5 girls be seated in a row such that boys and girls alternate?,2 * 5! * 5!,5! * 5!,10!,2 * 10!,a
+"How many different 6-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",151200,136080,120960,100800,b
+In how many ways can 9 persons be seated around a circular table if 3 particular persons must always sit together?,6! * 3!,8! / 3!,7! * 3!,8! - 3!,a
+A bag contains 6 white and 4 black balls. In how many ways can 3 balls be chosen if at least 1 white ball must be chosen?,120,116,100,96,b
+How many different words can be formed using the letters of the word 'PERMUTATION'?,11!,11! / 2!,11! / (2! * 2!),11! / (2! * 3!),b
+In how many ways can 4 men and 4 women be seated around a circular table such that no two women sit together?,144,576,288,720,a
+"How many different 4-digit numbers can be formed using the digits 1, 2, 3, 4, 5, 6 with repetition allowed?",1296,625,256,1000,a
+In how many ways can 12 books be arranged on a shelf if 4 particular books must always be together?,9! * 4!,12! / 4!,8! * 4!,12! - 4!,a
+A committee of 4 members is to be formed from a group of 6 men and 5 women. In how many ways can the committee be formed if it must consist of 2 men and 2 women?,150,200,250,300,a
+How many different words can be formed using all the letters of the word 'ENGINE'?,360,180,120,60,b
+In how many ways can 6 boys and 6 girls be seated in a row such that boys and girls alternate?,2 * 6! * 6!,6! * 6!,12!,2 * 12!,a
+"How many different 7-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",604800,544320,483840,362880,b
+In how many ways can 10 persons be seated around a circular table if 4 particular persons must always sit together?,6! * 4!,9! / 4!,7! * 4!,9! - 4!,a
+A bag contains 7 red and 5 black balls. In how many ways can 4 balls be chosen if at least 2 red balls must be chosen?,420,455,490,525,b
+How many different words can be formed using the letters of the word 'STATISTICS'?,10! / (3! * 3! * 2!),10! / (3! * 3!),10! / (3! * 2!),10! / 3!,a
+In how many ways can 5 men and 5 women be seated around a circular table such that no two men sit together?,2 * 5! * 5!,5! * 5!,10!,2 * 10!,b
+"How many different 5-digit numbers can be formed using the digits 0, 1, 2, 3, 4 with repetition allowed?",625,500,400,375,b
+In how many ways can 15 books be arranged on a shelf if 5 particular books must always be together?,11! * 5!,15! / 5!,10! * 5!,15! - 5!,a
+A committee of 5 members is to be formed from a group of 8 men and 7 women. In how many ways can the committee be formed if it must consist of 3 men and 2 women?,1960,2100,2450,2940,b
+How many different words can be formed using all the letters of the word 'EXAMINATION'?,11! / (2! * 2!),11! / 2!,11! / (2! * 2! * 2!),11!,a
+In how many ways can 7 boys and 7 girls be seated in a row such that boys and girls alternate?,2 * 7! * 7!,7! * 7!,14!,2 * 14!,a
+"How many different 8-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",5443200,4838400,4354560,3628800,b
+In how many ways can 11 persons be seated around a circular table if 5 particular persons must always sit together?,6! * 5!,10! / 5!,7! * 5!,10! - 5!,a
+A bag contains 8 red and 6 black balls. In how many ways can 5 balls be chosen if at least 3 red balls must be chosen?,1120,1260,1344,1400,b
+How many different words can be formed using the letters of the word 'MATHEMATICS' if the vowels must always come together?,8! * 4!,8! * 4! / (2! * 2! * 2!),8! * 4! / (2! * 2!),8! * 4! / 2!,b
+In how many ways can 6 men and 6 women be seated around a circular table such that no two men sit together?,2 * 6! * 6!,6! * 6!,12!,2 * 12!,b
+"How many different 6-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5 with repetition allowed?",7776,6480,5400,4500,b
+In how many ways can 18 books be arranged on a shelf if 6 particular books must always be together?,13! * 6!,18! / 6!,12! * 6!,18! - 6!,a
+A committee of 6 members is to be formed from a group of 10 men and 8 women. In how many ways can the committee be formed if it must consist of 4 men and 2 women?,7560,8400,9240,10080,a
+How many different words can be formed using all the letters of the word 'ENGINEERING' if the vowels must always come together?,8! * 5! / (3! * 3! * 2!),8! * 5! / (3! * 2!),8! * 5! / (3! * 3!),8! * 5! / 3!,a
+In how many ways can 8 boys and 8 girls be seated in a row such that boys and girls alternate?,2 * 8! * 8!,8! * 8!,16!,2 * 16!,a
+"How many different 9-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",43545600,36288000,32659200,29030400,c
+In how many ways can 12 persons be seated around a circular table if 6 particular persons must always sit together?,6! * 6!,11! / 6!,7! * 6!,11! - 6!,a
+A bag contains 9 red and 7 black balls. In how many ways can 6 balls be chosen if at least 4 red balls must be chosen?,3024,3150,3276,3402,b
+How many different words can be formed using the letters of the word 'MISSISSIPPI' if the vowels must always come together?,7! * 4! / (4! * 2!),7! * 4! / (4!),7! * 4! / (2!),7! * 4! / (4! * 2! * 2!),a
+In how many ways can 7 men and 7 women be seated around a circular table such that no two women sit together?,2 * 7! * 7!,7! * 7!,14!,2 * 14!,b
+"How many different 7-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6 with repetition allowed?",117649,100000,823543,700000,d
+In how many ways can 20 books be arranged on a shelf if 7 particular books must always be together?,14! * 7!,20! / 7!,13! * 7!,20! - 7!,a
+A committee of 7 members is to be formed from a group of 12 men and 10 women. In how many ways can the committee be formed if it must consist of 5 men and 2 women?,27720,30240,33264,36960,a
+How many different words can be formed using all the letters of the word 'ASSASSINATION' if the vowels must always come together?,8! * 6! / (3! * 4! * 2!),8! * 6! / (3! * 4!),8! * 6! / (3! * 2!),8! * 6! / 4!,a
+In how many ways can 9 boys and 9 girls be seated in a row such that boys and girls alternate?,2 * 9! * 9!,9! * 9!,18!,2 * 18!,a
+"How many different 10-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",362880000,326592000,290304000,261273600,b
+In how many ways can 13 persons be seated around a circular table if 7 particular persons must always sit together?,6! * 7!,12! / 7!,7! * 7!,12! - 7!,a
+A bag contains 10 red and 8 black balls. In how many ways can 7 balls be chosen if at least 5 red balls must be chosen?,11200,12000,12960,13860,b
+How many different words can be formed using the letters of the word 'PERMUTATION' if the vowels must always come together?,7! * 5! / 2!,7! * 5! / (2! * 2!),7! * 5! / (2! * 3!),7! * 5!,a
+In how many ways can 8 men and 8 women be seated around a circular table such that no two men sit together?,2 * 8! * 8!,8! * 8!,16!,2 * 16!,b
+"How many different 8-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7 with repetition allowed?",16777216,14680064,134217728,11764900,b
+In how many ways can 25 books be arranged on a shelf if 8 particular books must always be together?,18! * 8!,25! / 8!,17! * 8!,25! - 8!,a
+A committee of 8 members is to be formed from a group of 15 men and 12 women. In how many ways can the committee be formed if it must consist of 6 men and 2 women?,100100,105000,110000,115000,a
+How many different words can be formed using all the letters of the word 'STATISTICS' if the vowels must always come together?,6! * 3! / (3! * 3! * 2!),6! * 3! / (3! * 3!),6! * 3! / (3! * 2!),6! * 3! / 3!,a
+In how many ways can 10 boys and 10 girls be seated in a row such that boys and girls alternate?,2 * 10! * 10!,10! * 10!,20!,2 * 20!,a
+"How many different 11-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",3265920000,2903040000,2612736000,2350000000,b
+In how many ways can 14 persons be seated around a circular table if 8 particular persons must always sit together?,6! * 8!,13! / 8!,7! * 8!,13! - 8!,a
+A bag contains 12 red and 10 black balls. In how many ways can 8 balls be chosen if at least 6 red balls must be chosen?,27720,29700,31680,33660,b
+How many different words can be formed using the letters of the word 'ALLAHABAD' if the vowels must always come together?,5! * 4! / (4! * 2!),5! * 4! / 4!,5! * 4! / 2!,5! * 4! / (4! * 2! * 2!),c
+In how many ways can 9 men and 9 women be seated around a circular table such that no two women sit together?,2 * 9! * 9!,9! * 9!,18!,2 * 18!,b
+"How many different 9-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 with repetition allowed?",387420489,348678440,313810596,282429536,b
+In how many ways can 30 books be arranged on a shelf if 9 particular books must always be together?,22! * 9!,30! / 9!,21! * 9!,30! - 9!,a
+A committee of 9 members is to be formed from a group of 18 men and 15 women. In how many ways can the committee be formed if it must consist of 7 men and 2 women?,185640,194480,203320,212160,b
+How many different words can be formed using all the letters of the word 'EXAMINATION' if the vowels must always come together?,7! * 5! / (2! * 2!),7! * 5! / 2!,7! * 5! / (2! * 2! * 2!),7! * 5!,a
+In how many ways can 11 boys and 11 girls be seated in a row such that boys and girls alternate?,2 * 11! * 11!,11! * 11!,22!,2 * 22!,a
+"How many different 12-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",29030400000,26127360000,23514624000,21163161600,b
+In how many ways can 15 persons be seated around a circular table if 9 particular persons must always sit together?,6! * 9!,14! / 9!,7! * 9!,14! - 9!,a
+A bag contains 15 red and 12 black balls. In how many ways can 10 balls be chosen if at least 8 red balls must be chosen?,136500,145860,155220,164580,b
+How many different words can be formed using the letters of the word 'MATHEMATICS' if the consonants must always come together?,5! * 7! / (2! * 2! * 2!),5! * 7! / (2! * 2!),5! * 7! / 2!,5! * 7!,b
+In how many ways can 10 men and 10 women be seated around a circular table such that no two men sit together?,2 * 10! * 10!,10! * 10!,20!,2 * 20!,b
+"How many different 10-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 with repetition allowed?",10^10,9 * 10^9,10!,9!,b
+In how many ways can 35 books be arranged on a shelf if 10 particular books must always be together?,26! * 10!,35! / 10!,25! * 10!,35! - 10!,a
+A committee of 10 members is to be formed from a group of 20 men and 18 women. In how many ways can the committee be formed if it must consist of 8 men and 2 women?,263340,277200,291060,304920,b
+How many different words can be formed using all the letters of the word 'ENGINEERING' if the consonants must always come together?,6! * 5! / (3! * 3! * 2!),6! * 5! / (3! * 2!),6! * 5! / (3! * 3!),6! * 5! / 3!,a
+In how many ways can 12 boys and 12 girls be seated in a row such that boys and girls alternate?,2 * 12! * 12!,12! * 12!,24!,2 * 24!,a
+"How many different 13-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",261273600000,235146240000,211631616000,190468454400,b
+In how many ways can 16 persons be seated around a circular table if 10 particular persons must always sit together?,6! * 10!,15! / 10!,7! * 10!,15! - 10!,a
+A bag contains 18 red and 15 black balls. In how many ways can 12 balls be chosen if at least 9 red balls must be chosen?,1001000,1050000,1100000,1150000,b
+How many different words can be formed using the letters of the word 'MISSISSIPPI' if the consonants must always come together?,4! * 7! / (4! * 2!),4! * 7! / 4!,4! * 7! / 2!,4! * 7! / (4! * 2! * 2!),c
+In how many ways can 11 men and 11 women be seated around a circular table such that no two women sit together?,2 * 11! * 11!,11! * 11!,22!,2 * 22!,b
+"How many different 11-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 with repetition allowed?",9 * 10^10,10^11,11!,10!,a
+In how many ways can 40 books be arranged on a shelf if 11 particular books must always be together?,30! * 11!,40! / 11!,29! * 11!,40! - 11!,a
+A committee of 11 members is to be formed from a group of 25 men and 20 women. In how many ways can the committee be formed if it must consist of 9 men and 2 women?,1550400,1627920,1705440,1782960,b
+How many different words can be formed using all the letters of the word 'ASSASSINATION' if the consonants must always come together?,7! * 6! / (3! * 4! * 2!),7! * 6! / (3! * 4!),7! * 6! / (3! * 2!),7! * 6! / 4!,a
+In how many ways can 13 boys and 13 girls be seated in a row such that boys and girls alternate?,2 * 13! * 13!,13! * 13!,26!,2 * 26!,a
+"How many different 14-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",2351462400000,2116316160000,1904684544000,1714216089600,b
+In how many ways can 17 persons be seated around a circular table if 11 particular persons must always sit together?,6! * 11!,16! / 11!,7! * 11!,16! - 11!,a
+A bag contains 20 red and 18 black balls. In how many ways can 14 balls be chosen if at least 11 red balls must be chosen?,15504000,16279200,17054400,17829600,b
+How many different words can be formed using the letters of the word 'PERMUTATION' if the consonants must always come together?,6! * 5! / 2!,6! * 5! / (2! * 2!),6! * 5! / (2! * 3!),6! * 5!,a
+In how many ways can 12 men and 12 women be seated around a circular table such that no two men sit together?,2 * 12! * 12!,12! * 12!,24!,2 * 24!,b
+"How many different 12-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 with repetition allowed?",9 * 10^11,10^12,12!,11!,a
+In how many ways can 45 books be arranged on a shelf if 12 particular books must always be together?,34! * 12!,45! / 12!,33! * 12!,45! - 12!,a
+A committee of 12 members is to be formed from a group of 30 men and 25 women. In how many ways can the committee be formed if it must consist of 10 men and 2 women?,13520780,14200000,14879220,15558460,a
+How many different words can be formed using all the letters of the word 'STATISTICS' if the consonants must always come together?,5! * 3! / (3! * 3! * 2!),5! * 3! / (3! * 3!),5! * 3! / (3! * 2!),5! * 3! / 3!,a
+In how many ways can 14 boys and 14 girls be seated in a row such that boys and girls alternate?,2 * 14! * 14!,14! * 14!,28!,2 * 28!,a
+"How many different 15-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",21163161600000,19046845440000,17142160896000,15427944806400,b
+In how many ways can 18 persons be seated around a circular table if 12 particular persons must always sit together?,6! * 12!,17! / 12!,7! * 12!,17! - 12!,a
+A bag contains 25 red and 20 black balls. In how many ways can 16 balls be chosen if at least 13 red balls must be chosen?,120000000,126000000,132000000,138000000,b
+How many different words can be formed using the letters of the word 'ALLAHABAD' if the consonants must always come together?,4! * 5! / (4! * 2!),4! * 5! / 4!,4! * 5! / 2!,4! * 5! / (4! * 2! * 2!),c
+In how many ways can 13 men and 13 women be seated around a circular table such that no two women sit together?,2 * 13! * 13!,13! * 13!,26!,2 * 26!,b
+"How many different 13-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 with repetition allowed?",9 * 10^12,10^13,13!,12!,a
+In how many ways can 50 books be arranged on a shelf if 13 particular books must always be together?,38! * 13!,50! / 13!,37! * 13!,50! - 13!,a
+A committee of 13 members is to be formed from a group of 35 men and 30 women. In how many ways can the committee be formed if it must consist of 11 men and 2 women?,100000000,105000000,110000000,115000000,a
+How many different words can be formed using all the letters of the word 'EXAMINATION' if the consonants must always come together?,6! * 5! / (2! * 2!),6! * 5! / 2!,6! * 5! / (2! * 2! * 2!),6! * 5!,a
+In how many ways can 15 boys and 15 girls be seated in a row such that boys and girls alternate?,2 * 15! * 15!,15! * 15!,30!,2 * 30!,a
+"How many different 16-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",190468454400000,171421608960000,154279448064000,138851503257600,b
+In how many ways can 19 persons be seated around a circular table if 13 particular persons must always sit together?,6! * 13!,18! / 13!,7! * 13!,18! - 13!,a
+A bag contains 30 red and 25 black balls. In how many ways can 18 balls be chosen if at least 15 red balls must be chosen?,1000000000,1050000000,1100000000,1150000000,b
+How many different words can be formed using the letters of the word 'PERMUTATION' if the consonants must always come together?,5! * 6! / 2!,5! * 6! / (2! * 2!),5! * 6! / (2! * 3!),5! * 6!,a
+In how many ways can 14 men and 14 women be seated around a circular table such that no two men sit together?,2 * 14! * 14!,14! * 14!,28!,2 * 28!,b
+"How many different 14-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 with repetition allowed?",9 * 10^13,10^14,14!,13!,a
+In how many ways can 55 books be arranged on a shelf if 14 particular books must always be together?,41! * 14!,55! / 14!,40! * 14!,55! - 14!,a
+A committee of 14 members is to be formed from a group of 40 men and 35 women. In how many ways can the committee be formed if it must consist of 12 men and 2 women?,700000000,735000000,770000000,805000000,a
+How many different words can be formed using all the letters of the word 'STATISTICS' if the consonants must always come together?,4! * 6! / (3! * 3! * 2!),4! * 6! / (3! * 3!),4! * 6! / (3! * 2!),4! * 6! / 3!,a
+In how many ways can 16 boys and 16 girls be seated in a row such that boys and girls alternate?,2 * 16! * 16!,16! * 16!,32!,2 * 32!,a
+"How many different 17-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",1714216089600000,1542794480640000,1388515032576000,1249663529318400,b
+In how many ways can 20 persons be seated around a circular table if 14 particular persons must always sit together?,6! * 14!,19! / 14!,7! * 14!,19! - 14!,a
+A bag contains 35 red and 30 black balls. In how many ways can 20 balls be chosen if at least 17 red balls must be chosen?,10000000000,10500000000,11000000000,11500000000,b
+How many different words can be formed using the letters of the word 'ALLAHABAD' if the consonants must always come together?,3! * 6! / (4! * 2!),3! * 6! / 4!,3! * 6! / 2!,3! * 6! / (4! * 2! * 2!),c
+In how many ways can 15 men and 15 women be seated around a circular table such that no two women sit together?,2 * 15! * 15!,15! * 15!,30!,2 * 30!,b
+"How many different 15-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 with repetition allowed?",9 * 10^14,10^15,15!,14!,a
+In how many ways can 60 books be arranged on a shelf if 15 particular books must always be together?,46! * 15!,60! / 15!,45! * 15!,60! - 15!,a
+A committee of 15 members is to be formed from a group of 45 men and 40 women. In how many ways can the committee be formed if it must consist of 13 men and 2 women?,5000000000,5250000000,5500000000,5750000000,a
+How many different words can be formed using all the letters of the word 'EXAMINATION' if the consonants must always come together?,5! * 6! / (2! * 2!),5! * 6! / 2!,5! * 6! / (2! * 2! * 2!),5! * 6!,a
+In how many ways can 17 boys and 17 girls be seated in a row such that boys and girls alternate?,2 * 17! * 17!,17! * 17!,34!,2 * 34!,a
+"How many different 18-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 without repetition?",15427944806400000,13885150325760000,12496635293184000,11246971763865600,b
+In how many ways can 21 persons be seated around a circular table if 15 particular persons must always sit together?,6! * 15!,20! / 15!,7! * 15!,20! - 15!,a
+A bag contains 40 red and 35 black balls. In how many ways can 25 balls be chosen if at least 20 red balls must be chosen?,100000000000,105000000000,110000000000,115000000000,b
+How many different words can be formed using the letters of the word 'PERMUTATION' if the consonants must always come together?,4! * 7! / 2!,4! * 7! / (2! * 2!),4! * 7! / (2! * 3!),4! * 7!,a
+In how many ways can 16 men and 16 women be seated around a circular table such that no two men sit together?,2 * 16! * 16!,16! * 16!,32!,2 * 32!,b
+"How many different 16-digit numbers can be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 with repetition allowed?",9 * 10^15,10^16,16!,15!,a
