@@ -1,0 +1,14 @@
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-CORS==4.0.0
+Werkzeug==2.3.7
+Flask-Migrate
+
+
+#Username: alice_smith, Email: alice@example.com, Password: password123
+#Username: bob_jones, Email: bob@example.com, Password: password123
+#Username: carol_brown, Email: carol@example.com, Password: password123
+#Username: david_wilson, Email: david@example.com, Password: password123
+#Username: emma_davis, Email: emma@example.com, Password: password123
+
+
