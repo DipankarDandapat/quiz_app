@@ -43,7 +43,7 @@ def login(request: Request, db: Session = Depends(get_db)):
             }, 403)
         token = create_session({"user_id": user.id, "username": user.username, "user_type": user.user_type})
         resp = JSONResponse({"message": "Login successful", "user": user.to_dict()})
-        resp.set_cookie(COOKIE_NAME, token, httponly=True, samesite="lax", max_age=86400 * 7)
+        resp.set_cookie(COOKIE_NAME, token, httponly=True, samesite="none", secure=True, max_age=86400 * 7)
         return resp
     return JSONResponse({"error": "Invalid username or password"}, 401)
 

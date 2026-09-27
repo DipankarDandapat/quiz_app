@@ -48,7 +48,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    api.get('/check-auth').then(r => {
+    api.get('/check-auth', { timeout: 40000 }).then(r => {
       if (r.data.authenticated) setUser(r.data.user)
       setAuthChecked(true)
     }).catch(() => setAuthChecked(true))
@@ -84,7 +84,13 @@ export default function App() {
     setSidebarOpen(false)
   }
 
-  if (!authChecked) return null
+  if (!authChecked) return (
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
+      <div className="spinner"></div>
+      <p style={{ fontSize: 14, color: 'var(--text-secondary)', fontWeight: 500 }}>Connecting to server…</p>
+      <p style={{ fontSize: 12, color: 'var(--text-muted)' }}>Backend may be waking up, please wait a moment.</p>
+    </div>
+  )
 
   const navItems = [
     { key: 'dashboard', icon: 'fa-house', label: 'Dashboard' },
