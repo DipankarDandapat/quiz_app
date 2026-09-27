@@ -63,7 +63,7 @@ function TestDetailsModal({ resultId, onClose }) {
                       </div>
                     </div>
                     <div style={{ display: 'grid', gap: 4 }}>
-                      {['A', 'B', 'C', 'D'].map(opt => {
+                      {['A', 'B', 'C', 'D'].filter(opt => (qa.question[`option_${opt.toLowerCase()}`] || '').trim()).map(opt => {
                         const optText = qa.question[`option_${opt.toLowerCase()}`]
                         const isCorrect = qa.question.correct_answer?.trim().toLowerCase() === optText?.trim().toLowerCase()
                         const isSelected = qa.selected_answer?.trim().toLowerCase() === optText?.trim().toLowerCase()

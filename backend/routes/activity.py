@@ -124,7 +124,6 @@ def get_leaderboard_weekly(request: Request, db: Session = Depends(get_db)):
 
 @router.get("/statistics")
 def get_statistics(request: Request, db: Session = Depends(get_db)):
-    require_login(request)
     popular = db.query(Subject.name, Subject.id, func.count(TestResult.id).label("cnt"))\
         .join(QuizTest, Subject.id == QuizTest.subject_id)\
         .join(TestResult, QuizTest.id == TestResult.quiz_test_id)\
