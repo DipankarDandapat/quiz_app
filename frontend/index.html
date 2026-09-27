@@ -7,9 +7,20 @@
     <title>Quiz Portal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+   <script>
+      (function(){
+        var r = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (r && r !== location.href) history.replaceState(null, null, r);
+      })();
+    </script>
+
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
+

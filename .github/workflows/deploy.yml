@@ -27,7 +27,7 @@ jobs:
         working-directory: frontend
         env:
           GITHUB_PAGES: "true"
-          VITE_API_URL: "https://quiz_app.onrender.com"
+          VITE_API_URL: "https://quiz-app-xyk0.onrender.com"
 
       - name: List dist folder
         run: ls -la frontend/dist
