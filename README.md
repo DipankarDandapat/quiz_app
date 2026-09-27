@@ -1,324 +1,320 @@
-# Quiz Portal - Comprehensive Quiz Application
+# Quiz Portal
 
-A full-featured quiz application built with Python Flask and modern web technologies, featuring user authentication, dynamic exam management, timed MCQ tests, result tracking, and comprehensive analytics.
-
-## 🚀 Features
-
-### Core Functionality
-- **User Authentication**: Secure registration, login, and logout with password hashing
-- **Dynamic Exam Management**: Exams and subjects automatically populate from database
-- **Quiz Test System**: Multiple choice questions with correct answers stored in database
-- **Timer Functionality**: Configurable time limits per test with real-time countdown
-- **Auto-Submit**: Tests automatically submit when time expires
-- **Result Tracking**: Automatic scoring (1 mark per question) with detailed analytics
-- **Activity Dashboard**: Complete test history and performance statistics
-- **Responsive Design**: Beautiful gradient UI that works on desktop and mobile
-
-### Advanced Features
-- **Duplicate Prevention**: Users cannot retake completed tests
-- **Progress Tracking**: Visual progress bars during tests
-- **Subject Analytics**: Performance breakdown by subject area
-- **Leaderboard**: Compare performance with other users
-- **Session Management**: Secure user sessions with proper logout
-- **Database Relationships**: Properly normalized database with foreign key constraints
-
-## 📋 Requirements
-
-### System Requirements
-- Python 3.8 or higher
-- pip (Python package installer)
-- Virtual environment (recommended)
-
-### Python Dependencies
-```
-Flask==2.3.3
-Flask-SQLAlchemy==3.0.5
-Flask-CORS==4.0.0
-Werkzeug==2.3.7
-```
-
-## 🛠️ Installation & Setup
-
-### 1. Clone/Download the Project
-```bash
-# If you have the project files, navigate to the project directory
-cd quiz_app
-```
-
-### 2. Create Virtual Environment
-```bash
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
-```bash
-pip install Flask==2.3.3 Flask-SQLAlchemy==3.0.5 Flask-CORS==4.0.0 Werkzeug==2.3.7
-```
-
-### 4. Initialize Database with Dummy Data
-```bash
-python create_dummy_data.py
-```
-
-### 5. Run the Application
-```bash
-python src/main.py
-```
-
-The application will be available at: `http://localhost:5000`
-
-## 👤 Test User Credentials
-
-### Main Test User
-- **Username**: `testuser`
-- **Password**: `password123`
-- **Email**: `test@example.com`
-
-### Additional Users (for leaderboard testing)
-- **alice_smith** / password123
-- **bob_jones** / password123
-- **carol_brown** / password123
-- **david_wilson** / password123
-- **emma_davis** / password123
-
-## 📊 Database Structure
-
-### Tables Overview
-1. **users** - User account information
-2. **exams** - Exam categories (e.g., Computer Science, Mathematics)
-3. **subjects** - Subject areas within exams (e.g., Python Programming, Calculus)
-4. **quiz_tests** - Individual quiz tests with time limits
-5. **questions** - MCQ questions with options and correct answers
-6. **test_results** - User test attempts and scores
-7. **user_answers** - Individual question responses
-
-### Entity Relationships
-```
-users (1) ←→ (many) test_results
-exams (1) ←→ (many) subjects
-subjects (1) ←→ (many) quiz_tests
-quiz_tests (1) ←→ (many) questions
-quiz_tests (1) ←→ (many) test_results
-test_results (1) ←→ (many) user_answers
-questions (1) ←→ (many) user_answers
-```
-
-## 🗂️ Project Structure
-
-```
-quiz_app/
-├── src/
-│   ├── main.py                 # Main Flask application
-│   ├── models/
-│   │   └── user.py            # Database models and schemas
-│   ├── routes/
-│   │   ├── user.py            # Authentication endpoints
-│   │   ├── exam.py            # Exam and subject management
-│   │   ├── quiz.py            # Quiz test functionality
-│   │   └── activity.py        # Activity tracking and analytics
-│   └── static/
-│       ├── index.html         # Main frontend interface
-│       └── app.js             # Frontend JavaScript logic
-├── create_dummy_data.py       # Database seeding script
-├── requirements.txt           # Python dependencies
-├── README.md                  # This documentation
-├── DATABASE_SCHEMA.md         # Detailed database documentation
-└── API_DOCUMENTATION.md       # API endpoint documentation
-```
-
-## 🔧 Configuration
-
-### Database Configuration
-The application uses SQLite by default with the database file stored at:
-```
-quiz_app/src/quiz_portal.db
-```
-
-### CORS Configuration
-CORS is enabled for all origins to support frontend-backend communication.
-
-### Session Configuration
-- Session timeout: Browser session (closes when browser closes)
-- Secure session cookies in production
-- Session data stored server-side
-
-## 🎯 Sample Data
-
-### Exams Included
-1. **Computer Science Fundamentals**
-   - Python Programming (2 tests)
-   - Data Structures (2 tests)
-   - Algorithms (1 test)
-
-2. **Mathematics for Engineers**
-   - Calculus (1 test)
-   - Linear Algebra (1 test)
-   - Statistics (1 test)
-
-3. **General Knowledge Quiz**
-   - World History (1 test)
-   - Geography (1 test)
-   - Science Facts (1 test)
-
-### Question Types
-- Python programming concepts
-- Data structure fundamentals
-- Mathematical principles
-- World geography and capitals
-- General science knowledge
-
-## 🚀 Usage Guide
-
-### For Students
-1. **Register/Login**: Create account or login with test credentials
-2. **Browse Exams**: View available exam categories
-3. **Select Subject**: Choose a subject within an exam
-4. **Take Quiz**: Select a quiz test and start the timer
-5. **Answer Questions**: Navigate through MCQ questions
-6. **Submit**: Complete test before time expires
-7. **View Results**: Check scores and detailed analytics
-8. **Track Progress**: Monitor performance in Activity section
-
-### For Administrators
-1. **Add Exams**: Insert new exam categories in database
-2. **Create Subjects**: Add subjects linked to exams
-3. **Design Tests**: Create quiz tests with time limits
-4. **Add Questions**: Insert MCQ questions with correct answers
-5. **Monitor Usage**: View user activity and performance
-
-## 🔌 API Endpoints
-
-### Authentication
-- `POST /api/register` - User registration
-- `POST /api/login` - User login
-- `POST /api/logout` - User logout
-- `GET /api/check-auth` - Check authentication status
-
-### Exams & Subjects
-- `GET /api/exams` - Get all exams
-- `GET /api/exams/{id}/subjects` - Get subjects for an exam
-- `GET /api/subjects/{id}/quiz-tests` - Get quiz tests for a subject
-
-### Quiz Tests
-- `POST /api/quiz-tests/{id}/start` - Start a quiz test
-- `GET /api/quiz-tests/{id}/questions` - Get test questions
-- `POST /api/quiz-tests/{id}/submit-answer` - Submit answer
-- `POST /api/quiz-tests/{id}/submit` - Submit complete test
-
-### Activity & Analytics
-- `GET /api/my-activity` - Get user's test history
-- `GET /api/leaderboard` - Get leaderboard data
-
-## 🛡️ Security Features
-
-### Password Security
-- Passwords hashed using Werkzeug's secure password hashing
-- No plain text passwords stored in database
-- Secure password verification
-
-### Session Security
-- Server-side session management
-- Session data not exposed to client
-- Automatic session cleanup
-
-### Input Validation
-- SQL injection prevention through SQLAlchemy ORM
-- Input sanitization for all user data
-- Proper error handling and validation
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Database not found**
-```bash
-# Solution: Run the dummy data script
-python create_dummy_data.py
-```
-
-**Port already in use**
-```bash
-# Solution: Change port in main.py or kill existing process
-# Kill process on port 5000 (Windows)
-netstat -ano | findstr :5000
-taskkill /PID <PID> /F
-
-# Kill process on port 5000 (macOS/Linux)
-lsof -ti:5000 | xargs kill -9
-```
-
-**Module not found**
-```bash
-# Solution: Ensure virtual environment is activated and dependencies installed
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
-```
-
-**CORS errors**
-- Ensure Flask-CORS is installed and configured
-- Check that frontend is accessing correct backend URL
-
-## 📈 Performance Considerations
-
-### Database Optimization
-- Indexed foreign key relationships
-- Efficient query patterns using SQLAlchemy
-- Minimal database calls per request
-
-### Frontend Optimization
-- Single-page application design
-- Efficient DOM manipulation
-- Responsive CSS with minimal overhead
-
-### Scalability
-- Stateless API design
-- Database connection pooling
-- Modular architecture for easy expansion
-
-## 🔮 Future Enhancements
-
-### Planned Features
-- Question categories and difficulty levels
-- Image/media support in questions
-- Detailed analytics dashboard
-- Export results to PDF/Excel
-- Email notifications
-- Mobile app version
-- Real-time multiplayer quizzes
-
-### Technical Improvements
-- Redis for session storage
-- PostgreSQL for production database
-- Docker containerization
-- Automated testing suite
-- CI/CD pipeline
-
-## 📞 Support
-
-### Getting Help
-1. Check this README for common solutions
-2. Review the API documentation
-3. Examine the database schema documentation
-4. Check application logs for error details
-
-### Development
-- Built with Flask 2.3.3
-- Frontend uses vanilla JavaScript (no frameworks)
-- Database: SQLAlchemy ORM with SQLite
-- Styling: Custom CSS with gradient themes
-
-## 📄 License
-
-This project is created for educational and demonstration purposes. Feel free to use, modify, and distribute as needed.
+A full-featured quiz application with a **FastAPI** backend and **React + Vite** frontend.
 
 ---
 
-**Happy Learning! 🎓**
+## Project Structure
 
+```
+quiz_app/
+├── backend/                        ← FastAPI backend
+│   ├── models/
+│   │   └── models.py               # SQLAlchemy database models
+│   ├── routes/
+│   │   ├── user.py                 # Auth endpoints
+│   │   ├── exam.py                 # Exam / subject / question management
+│   │   ├── quiz.py                 # Quiz taking endpoints
+│   │   └── activity.py            # Activity, leaderboard, statistics
+│   ├── main.py                     # FastAPI app entry point
+│   ├── session.py                  # Cookie-based session (itsdangerous)
+│   └── requirements.txt            # Python dependencies
+│
+├── frontend/                       ← React + Vite frontend
+│   ├── src/
+│   │   ├── pages/                  # All page components
+│   │   ├── components/             # Shared components (Alert, Loading)
+│   │   ├── api.js                  # Axios instance
+│   │   ├── App.jsx                 # Root component
+│   │   └── main.jsx                # Entry point
+│   ├── index.html
+│   ├── vite.config.js              # Vite config with /api proxy
+│   └── package.json
+│
+├── start_backend.bat               ← One-click backend start (Windows)
+├── start_frontend.bat              ← One-click frontend start (Windows)
+└── README.md
+```
+
+---
+
+## Requirements
+
+### System
+- Python **3.10+** (3.13 supported)
+- Node.js **18+** and npm
+
+### Backend Python packages
+```
+fastapi==0.111.0
+uvicorn==0.30.0
+sqlalchemy>=2.0.36
+itsdangerous==2.2.0
+werkzeug==3.0.3
+python-multipart==0.0.9
+```
+
+### Frontend npm packages
+```
+react, react-dom, react-router-dom, axios
+vite, @vitejs/plugin-react
+```
+
+---
+
+## Setup & Installation
+
+### Step 1 — Clone / Download the project
+```bash
+cd quiz_app
+```
+
+### Step 2 — Backend setup
+
+```bash
+# (Optional but recommended) Create a virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# Windows:
+venv\Scripts\activate
+# macOS / Linux:
+source venv/bin/activate
+
+# Install backend dependencies
+pip install -r backend/requirements.txt
+```
+
+### Step 3 — Frontend setup
+
+```bash
+cd frontend
+npm install
+cd ..
+```
+
+That's it. The database (`backend/database/app.db`) already exists — no migration needed.
+
+---
+
+## Running the Project
+
+You need **two terminals** running at the same time.
+
+### Terminal 1 — Start Backend (FastAPI)
+
+```bash
+# From the quiz_app root folder
+python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+Backend runs at: `http://localhost:8000`
+Swagger API docs: `http://localhost:8000/docs`
+
+---
+
+### Terminal 2 — Start Frontend (Vite + React)
+
+```bash
+cd frontend
+npm run dev
+```
+
+Frontend runs at: `http://localhost:5173`
+
+> The Vite dev server automatically proxies all `/api` requests to `http://localhost:8000` — no CORS issues.
+
+---
+
+### One-click start (Windows)
+
+Double-click `start_backend.bat` in one window, then `start_frontend.bat` in another.
+
+---
+
+## Test User Credentials
+
+| Username | Password | Role |
+|---|---|---|
+| `testuser` | `password123` | Member |
+| `alice_smith` | `password123` | Member |
+| `bob_jones` | `password123` | Member |
+
+> Admin accounts can be set via the User Settings panel (requires an existing admin user).
+
+---
+
+## API Endpoints
+
+### Authentication
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/register` | Register new user |
+| POST | `/api/login` | Login |
+| POST | `/api/logout` | Logout |
+| GET | `/api/check-auth` | Check session status |
+
+### Exams & Subjects
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/exams` | List all active exams |
+| GET | `/api/exams/{id}/subjects` | Subjects for an exam |
+| GET | `/api/subjects/{id}/quiz-tests` | Quiz tests for a subject |
+
+### Quiz
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/quiz-tests/{id}/start` | Start a quiz |
+| GET | `/api/quiz-tests/{id}/questions` | Get questions (no answers) |
+| POST | `/api/quiz-tests/{id}/submit-answer` | Submit one answer |
+| POST | `/api/quiz-tests/{id}/submit` | Submit full quiz |
+
+### Activity
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/my-activity` | User test history + stats |
+| GET | `/api/leaderboard` | Top performers |
+| GET | `/api/test-results/{id}/details` | Detailed result with answers |
+
+### Quiz
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/quiz-tests/{id}/start` | Start a quiz |
+| GET | `/api/quiz-tests/{id}/questions` | Get questions — shuffled if enabled |
+| POST | `/api/quiz-tests/{id}/submit-answer` | Submit one answer (supports `is_flagged`) |
+| POST | `/api/quiz-tests/{id}/flag-question` | Toggle flag on a question |
+| POST | `/api/quiz-tests/{id}/submit` | Submit full quiz |
+
+### Admin
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/admin/users` | List all users (paginated) |
+| PUT | `/api/admin/users/{id}` | Update user role / status |
+| POST/PUT/DELETE | `/api/admin/exams` | Manage exams |
+| POST/PUT/DELETE | `/api/admin/subjects` | Manage subjects |
+| POST/PUT/DELETE | `/api/admin/quiz-tests` | Manage quiz tests (shuffle toggles) |
+| POST/PUT/DELETE | `/api/admin/questions` | Manage questions |
+| POST | `/api/admin/quiz-tests/{id}/upload-questions` | Bulk upload via CSV |
+| GET | `/api/admin/questions/{id}/flag-details` | Per-user flag details for a question |
+
+---
+
+## Features
+
+- User registration and login with password hashing
+- Account activation by admin
+- Timed MCQ quizzes with auto-submit on timeout
+- Retake limit per quiz test (configurable)
+- Detailed result view with correct/incorrect answer breakdown
+- Activity dashboard with pagination
+- Performance analytics by subject
+- Leaderboard
+- Admin panel: manage users, exams, subjects, tests, questions
+- CSV bulk question upload
+- Animated gradient background
+- Fully responsive design
+- Shuffle questions and shuffle answers per quiz test (admin toggle)
+- Question flagging during quiz — persisted to DB, visible in result review and admin panel
+- Day Streak tracking on dashboard
+- Admin flag analytics — see which questions users flagged and who flagged them
+
+---
+
+## Database
+
+The app uses **SQLite** stored at:
+```
+quiz_app/backend/database/app.db
+```
+
+### Tables
+| Table | Description |
+|---|---|
+| `user` | User accounts |
+| `exam` | Exam categories |
+| `subject` | Subjects within exams |
+| `quiz_test` | Individual quiz tests (includes `shuffle_questions`, `shuffle_answers` flags) |
+| `question` | MCQ questions |
+| `test_result` | User test attempts |
+| `user_answer` | Per-question responses (includes `is_flagged` column) |
+
+---
+
+## Feature Details
+
+### Shuffle Questions & Shuffle Answers
+Configured per quiz test by admin via the edit (✏️) modal in Question Management.
+- **Shuffle Questions** — every time a user starts the test, questions are served in a random order
+- **Shuffle Answers** — the 4 options (A/B/C/D) for each question are randomized on every attempt
+- Both are off by default. Enabled tests show 🔀 Q / 🔀 A badges on the test row in the admin tree
+- Answer correctness is unaffected because `correct_answer` is stored as the option text value, not A/B/C/D label
+
+### Question Flagging
+Users can flag any question during a quiz by clicking the **Flag** button on the question card.
+- Flags are stored in the `user_answer` table (`is_flagged` column) — persisted to DB immediately on toggle
+- If a question has not been answered yet, the flag is tracked in frontend state and saved when the answer is submitted
+- After submission, the result review shows a **Flagged** badge on flagged questions and a **"Flagged (N)"** filter button to show only flagged questions
+- The Activity page Test History popup also shows the Flagged badge on relevant questions
+- **Admin view** — in Question Management, each question row shows a yellow 🚩 N badge if it has been flagged. Clicking the badge opens a modal showing which users flagged it, what answer they selected, whether they got it right or wrong, and when they answered
+
+### Day Streak
+Shown on the Dashboard as a 🔥 stat card.
+- Counts how many **consecutive calendar days** the user has completed at least one quiz
+- The streak is not broken if the user hasn't taken a test yet today (yesterday counts as the most recent active day)
+- Resets to 0 if there is a gap of more than one day between quiz completions
+- Example: tests on Mon, Tue, Wed, Fri → streak is 1 (gap between Wed and Fri breaks it)
+
+---
+
+## Troubleshooting
+
+**Port already in use**
+```bash
+# Kill process on port 8000 (Windows)
+netstat -ano | findstr :8000
+taskkill /PID <PID> /F
+
+# Kill process on port 5173 (Windows)
+netstat -ano | findstr :5173
+taskkill /PID <PID> /F
+```
+
+**Module not found (Python)**
+```bash
+# Make sure virtual environment is activated
+venv\Scripts\activate
+pip install -r backend/requirements.txt
+```
+
+**npm install fails**
+```bash
+cd frontend
+npm install --legacy-peer-deps
+```
+
+**Database not found**
+```
+The database file must exist at: backend/database/app.db
+```
+
+**Frontend shows blank page**
+- Make sure the backend is running on port 8000 before opening the frontend
+- Check browser console for errors
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend framework | FastAPI 0.111 |
+| ASGI server | Uvicorn |
+| ORM | SQLAlchemy 2.x |
+| Database | SQLite |
+| Session | itsdangerous (signed cookies) |
+| Password hashing | Werkzeug |
+| Frontend framework | React 19 |
+| Build tool | Vite 8 |
+| HTTP client | Axios |
+| Routing | React Router DOM 7 |
+| Icons | Font Awesome 6 |
