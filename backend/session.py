@@ -13,6 +13,10 @@ def create_session(data: dict) -> str:
 def get_session(request: Request) -> dict:
     token = request.cookies.get(COOKIE_NAME)
     if not token:
+        auth = request.headers.get("Authorization", "")
+        if auth.startswith("Bearer "):
+            token = auth[7:]
+    if not token:
         return {}
     try:
         return _s.loads(token, max_age=86400 * 7)

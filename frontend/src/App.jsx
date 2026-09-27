@@ -62,6 +62,7 @@ export default function App() {
     try {
       await api.post('/logout')
     } catch {}
+    localStorage.removeItem('session_token')
     setUser(null)
     setSection('dashboard')
     setSidebarOpen(false)

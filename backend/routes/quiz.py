@@ -56,8 +56,9 @@ def start_quiz_test(quiz_test_id: int, request: Request, db: Session = Depends(g
         "total_questions": len(questions),
         "time_limit_minutes": qt.time_limit_minutes,
         "started_at": started_at.isoformat(),
+        "token": token,
     })
-    resp.set_cookie(COOKIE_NAME, token, httponly=True, samesite="lax", max_age=86400 * 7)
+    resp.set_cookie(COOKIE_NAME, token, httponly=True, samesite="none", secure=True, max_age=86400 * 7)
     return resp
 
 
@@ -167,8 +168,8 @@ def submit_quiz_test(quiz_test_id: int, request: Request, db: Session = Depends(
 
     new_session = {k: v for k, v in session.items() if k not in (key_id, key_at)}
     token = create_session(new_session)
-    resp = JSONResponse({"message": "Quiz test submitted successfully", "result": test_result.to_dict()})
-    resp.set_cookie(COOKIE_NAME, token, httponly=True, samesite="lax", max_age=86400 * 7)
+    resp = JSONResponse({"message": "Quiz test submitted successfully", "result": test_result.to_dict(), "token": token})
+    resp.set_cookie(COOKIE_NAME, token, httponly=True, samesite="none", secure=True, max_age=86400 * 7)
     return resp
 
 
