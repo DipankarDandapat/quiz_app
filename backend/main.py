@@ -39,6 +39,27 @@ app.include_router(activity.router, prefix="/api")
 # Create tables on startup (uses same DB as Flask app)
 Base.metadata.create_all(bind=engine)
 
+# ============================================================================
+# Root Endpoint
+# ============================================================================
+
+@app.get("/")
+async def root():
+    """Root endpoint with API info"""
+    return {
+        "name": "Quiz Test  API",
+        "version": "1.0.0",
+        "description": "quiz test backend",
+        "docs": "/docs",
+        "health": "/health",
+        "quiz-tests": "/api/quiz-tests",
+        "exams": "/api/exams"
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)
+
+    port = int(os.getenv("PORT", 8000))
+
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
