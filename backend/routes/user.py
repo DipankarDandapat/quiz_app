@@ -13,11 +13,12 @@ def register(request: Request, db: Session = Depends(get_db)):
     data = request.state.body
     if not data.get("username") or not data.get("email") or not data.get("password"):
         return JSONResponse({"error": "Username, email, and password are required"}, 400)
-    if db.query(User).filter_by(username=data["username"]).first():
-        return JSONResponse({"error": "Username already exists"}, 400)
-    if db.query(User).filter_by(email=data["email"]).first():
-        return JSONResponse({"error": "Email already exists"}, 400)
-    user = User(username=data["username"], email=data["email"], is_active=False)
+    if db.query(User).filter(func.lower(User.username) == data["username"].strip().lower()).first():
+        return JSONResponse({"error": "Username already taken"}, 400)
+    if db.query(User).filter(func.lower(User.email) == data["email"].strip().lower()).first():
+        return JSONResponse({"error": "This email is already registered. Please login instead."}, 400)
+    phone = data.get("phone", "").strip() or None
+    user = User(username=data["username"].strip(), email=data["email"].strip().lower(), phone=phone, is_active=False)
     user.set_password(data["password"])
     db.add(user)
     db.commit()
@@ -31,9 +32,13 @@ def register(request: Request, db: Session = Depends(get_db)):
 @router.post("/login")
 def login(request: Request, db: Session = Depends(get_db)):
     data = request.state.body
-    if not data.get("username") or not data.get("password"):
-        return JSONResponse({"error": "Username and password are required"}, 400)
-    user = db.query(User).filter_by(username=data["username"]).first()
+    identifier = data.get("username", "").strip()
+    if not identifier or not data.get("password"):
+        return JSONResponse({"error": "Username/email and password are required"}, 400)
+    # Case-insensitive match on username first, then email
+    user = db.query(User).filter(func.lower(User.username) == identifier.lower()).first()
+    if not user:
+        user = db.query(User).filter(func.lower(User.email) == identifier.lower()).first()
     if user and user.check_password(data["password"]):
         if not user.is_active:
             return JSONResponse({
@@ -45,7 +50,7 @@ def login(request: Request, db: Session = Depends(get_db)):
         resp = JSONResponse({"message": "Login successful", "user": user.to_dict(), "token": token})
         resp.set_cookie(COOKIE_NAME, token, httponly=True, samesite="none", secure=True, max_age=86400 * 7)
         return resp
-    return JSONResponse({"error": "Invalid username or password"}, 401)
+    return JSONResponse({"error": "Invalid username/email or password"}, 401)
 
 
 @router.post("/logout")
@@ -102,15 +107,15 @@ def update_user(user_id: int, request: Request, db: Session = Depends(get_db)):
         return JSONResponse({"error": "Not found"}, 404)
     data = request.state.body
     if "username" in data:
-        ex = db.query(User).filter_by(username=data["username"]).first()
+        ex = db.query(User).filter(func.lower(User.username) == data["username"].strip().lower()).first()
         if ex and ex.id != user_id:
-            return JSONResponse({"error": "Username already exists"}, 400)
-        user.username = data["username"]
+            return JSONResponse({"error": "Username already taken"}, 400)
+        user.username = data["username"].strip()
     if "email" in data:
-        ex = db.query(User).filter_by(email=data["email"]).first()
+        ex = db.query(User).filter(func.lower(User.email) == data["email"].strip().lower()).first()
         if ex and ex.id != user_id:
-            return JSONResponse({"error": "Email already exists"}, 400)
-        user.email = data["email"]
+            return JSONResponse({"error": "This email is already registered"}, 400)
+        user.email = data["email"].strip().lower()
     if "password" in data:
         user.set_password(data["password"])
     db.commit()

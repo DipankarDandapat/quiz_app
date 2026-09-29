@@ -193,6 +193,79 @@ def get_subject_statistics(subject_id: int, request: Request, db: Session = Depe
     }
 
 
+@router.get("/admin/stats")
+def get_admin_stats(request: Request, db: Session = Depends(get_db)):
+    require_login(request)
+    now = datetime.utcnow()
+    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    week_start = now - timedelta(days=7)
+
+    # Top-level counts
+    total_users = db.query(User).count()
+    active_users = db.query(User).filter_by(is_active=True).count()
+    tests_today = db.query(TestResult).filter(TestResult.completed_at >= today_start, TestResult.completed_at.isnot(None)).count()
+    tests_this_week = db.query(TestResult).filter(TestResult.completed_at >= week_start, TestResult.completed_at.isnot(None)).count()
+    total_tests_taken = db.query(TestResult).filter(TestResult.completed_at.isnot(None)).count()
+    total_questions = db.query(Question).filter_by(is_active=True).count()
+
+    # Most attempted quiz tests
+    most_attempted = db.query(
+        QuizTest.name, Subject.name, func.count(TestResult.id).label('cnt')
+    ).join(TestResult, QuizTest.id == TestResult.quiz_test_id)\
+     .join(Subject, QuizTest.subject_id == Subject.id)\
+     .filter(TestResult.completed_at.isnot(None))\
+     .group_by(QuizTest.id, QuizTest.name, Subject.name)\
+     .order_by(desc('cnt')).limit(8).all()
+
+    # Lowest avg scoring tests (min 5 attempts)
+    lowest_scoring = db.query(
+        QuizTest.name, Subject.name,
+        func.avg(TestResult.score * 100.0 / TestResult.total_questions).label('avg_pct'),
+        func.count(TestResult.id).label('cnt')
+    ).join(TestResult, QuizTest.id == TestResult.quiz_test_id)\
+     .join(Subject, QuizTest.subject_id == Subject.id)\
+     .filter(TestResult.completed_at.isnot(None))\
+     .group_by(QuizTest.id, QuizTest.name, Subject.name)\
+     .having(func.count(TestResult.id) >= 5)\
+     .order_by('avg_pct').limit(8).all()
+
+    # Daily tests for last 14 days
+    daily = db.query(
+        func.strftime('%Y-%m-%d', TestResult.completed_at).label('day'),
+        func.count(TestResult.id).label('cnt')
+    ).filter(TestResult.completed_at >= now - timedelta(days=14), TestResult.completed_at.isnot(None))\
+     .group_by(func.strftime('%Y-%m-%d', TestResult.completed_at)).all()
+
+    # Recent signups
+    recent_users = db.query(User).order_by(desc(User.created_at)).limit(5).all()
+
+    # Top scorers this week
+    top_scorers = db.query(
+        User.username,
+        func.count(TestResult.id).label('cnt'),
+        func.avg(TestResult.score * 100.0 / TestResult.total_questions).label('avg_pct')
+    ).join(TestResult, User.id == TestResult.user_id)\
+     .filter(TestResult.completed_at >= week_start, TestResult.completed_at.isnot(None))\
+     .group_by(User.id, User.username)\
+     .order_by(desc('avg_pct')).limit(5).all()
+
+    return {
+        "overview": {
+            "total_users": total_users,
+            "active_users": active_users,
+            "tests_today": tests_today,
+            "tests_this_week": tests_this_week,
+            "total_tests_taken": total_tests_taken,
+            "total_questions": total_questions,
+        },
+        "most_attempted": [{"name": r[0], "subject": r[1], "attempts": r[2]} for r in most_attempted],
+        "lowest_scoring": [{"name": r[0], "subject": r[1], "avg_pct": round(r[2], 1), "attempts": r[3]} for r in lowest_scoring],
+        "daily_activity": [{"day": r[0], "count": r[1]} for r in daily],
+        "recent_users": [{"username": u.username, "email": u.email, "is_active": u.is_active, "created_at": u.created_at.isoformat() if u.created_at else None} for u in recent_users],
+        "top_scorers_week": [{"username": r[0], "tests": r[1], "avg_pct": round(r[2], 1)} for r in top_scorers],
+    }
+
+
 @router.get("/test-results/{test_result_id}/details")
 def get_test_result_details(test_result_id: int, request: Request, db: Session = Depends(get_db)):
     session = require_login(request)

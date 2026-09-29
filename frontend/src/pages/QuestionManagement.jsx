@@ -8,7 +8,7 @@ function PracticeQuestionsPanel({ subjectId, setModal, questionsMap, reload, sho
   const [loadingPt, setLoadingPt] = useState(true)
   const [markingInfo, setMarkingInfo] = useState(null)
 
-  useState(() => {
+  useEffect(() => {
     api.get(`/subjects/${subjectId}/practice-test`).then(r => {
       setPracticeTestId(r.data.id)
       setMarkingInfo({ marks_correct: r.data.marks_correct, marks_negative: r.data.marks_negative })
@@ -19,7 +19,7 @@ function PracticeQuestionsPanel({ subjectId, setModal, questionsMap, reload, sho
         })
       }
     }).catch(() => setLoadingPt(false))
-  })
+  }, [subjectId])
 
   if (loadingPt) return <div style={{ padding: 12, fontSize: 12, color: 'var(--text-muted)' }}>Loading...</div>
   if (!practiceTestId) return <div style={{ padding: 12, fontSize: 12, color: 'var(--text-muted)' }}>Practice test not found.</div>

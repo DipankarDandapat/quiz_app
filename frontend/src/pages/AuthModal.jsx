@@ -4,7 +4,7 @@ import api from '../api'
 export default function AuthModal({ defaultTab = 'login', onSuccess, onClose, showAlert }) {
   const [tab, setTab] = useState(defaultTab)
   const [loginData, setLoginData] = useState({ username: '', password: '' })
-  const [regData, setRegData] = useState({ username: '', email: '', password: '' })
+  const [regData, setRegData] = useState({ username: '', email: '', phone: '', password: '' })
   const [loginMsg, setLoginMsg] = useState(null)
   const [loading, setLoading] = useState(false)
 
@@ -29,9 +29,9 @@ export default function AuthModal({ defaultTab = 'login', onSuccess, onClose, sh
     setLoading(true)
     try {
       await api.post('/register', regData)
-      showAlert('Registration successful! Please login.', 'success')
+      showAlert('Registration successful! Please wait for account activation.', 'success')
       setTab('login')
-      setRegData({ username: '', email: '', password: '' })
+      setRegData({ username: '', email: '', phone: '', password: '' })
     } catch (err) {
       showAlert(err.response?.data?.error || 'Registration failed', 'error')
     }
@@ -70,8 +70,8 @@ export default function AuthModal({ defaultTab = 'login', onSuccess, onClose, sh
           {tab === 'login' ? (
             <form onSubmit={handleLogin}>
               <div className="form-group">
-                <label className="form-label">Username</label>
-                <input className="form-input" type="text" required placeholder="Enter your username"
+                <label className="form-label">Username or Email</label>
+                <input className="form-input" type="text" required placeholder="Enter your username or email"
                   style={{ fontSize: 16 }}
                   value={loginData.username} onChange={e => setLoginData({ ...loginData, username: e.target.value })} />
               </div>
@@ -108,6 +108,12 @@ export default function AuthModal({ defaultTab = 'login', onSuccess, onClose, sh
                 <input className="form-input" type="email" required placeholder="your@email.com"
                   style={{ fontSize: 16 }}
                   value={regData.email} onChange={e => setRegData({ ...regData, email: e.target.value })} />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Phone Number <span style={{ fontWeight: 400, color: 'var(--text-muted)', fontSize: 11 }}>(optional)</span></label>
+                <input className="form-input" type="tel" placeholder="e.g. 9800188406"
+                  style={{ fontSize: 16 }}
+                  value={regData.phone} onChange={e => setRegData({ ...regData, phone: e.target.value })} />
               </div>
               <div className="form-group">
                 <label className="form-label">Password</label>

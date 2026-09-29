@@ -954,3 +954,8 @@ select.form-input { cursor: pointer; }
 }
 
 .hidden { display: none !important; }
+
+/* ── Admin Dashboard responsive ── */
+@media (max-width: 640px) {
+  .admin-signup-email { display: none; }
+}

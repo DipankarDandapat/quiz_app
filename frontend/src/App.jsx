@@ -10,6 +10,7 @@ import Activity from './pages/Activity'
 import Leaderboard from './pages/Leaderboard'
 import UserSettings from './pages/UserSettings'
 import QuestionManagement from './pages/QuestionManagement'
+import AdminDashboard from './pages/AdminDashboard'
 
 const sectionTitles = {
   dashboard: 'Dashboard',
@@ -18,6 +19,7 @@ const sectionTitles = {
   leaderboard: 'Leaderboard',
   userSettings: 'User Management',
   questionMgmt: 'Question Mgmt',
+  adminDashboard: 'Admin Dashboard',
   quiz: 'Quiz',
 }
 
@@ -101,6 +103,7 @@ export default function App() {
   ]
 
   const adminItems = user?.user_type === 'admin' ? [
+    { key: 'adminDashboard', icon: 'fa-gauge-high', label: 'Overview' },
     { key: 'userSettings', icon: 'fa-users-gear', label: 'Users' },
     { key: 'questionMgmt', icon: 'fa-book-open', label: 'Questions' },
   ] : []
@@ -259,6 +262,7 @@ export default function App() {
               )}
               {section === 'activity' && <Activity showAlert={showAlert} />}
               {section === 'leaderboard' && <Leaderboard showAlert={showAlert} />}
+              {section === 'adminDashboard' && user?.user_type === 'admin' && <AdminDashboard showAlert={showAlert} />}
               {section === 'userSettings' && user?.user_type === 'admin' && <UserSettings showAlert={showAlert} />}
               {section === 'questionMgmt' && user?.user_type === 'admin' && <QuestionManagement showAlert={showAlert} />}
             </main>

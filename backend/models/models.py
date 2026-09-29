@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, Text, Boolean, DateTime, ForeignKey, Float
+from sqlalchemy import create_engine, Column, Integer, String, Text, Boolean, DateTime, ForeignKey, Float, select, func, Index
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
@@ -25,6 +25,7 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     username = Column(String(80), unique=True, nullable=False)
     email = Column(String(120), unique=True, nullable=False)
+    phone = Column(String(20), nullable=True)
     password_hash = Column(String(255), nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
     is_active = Column(Boolean, default=False)
@@ -43,6 +44,7 @@ class User(Base):
             "id": self.id,
             "username": self.username,
             "email": self.email,
+            "phone": self.phone or '',
             "created_at": self.created_at.isoformat() if self.created_at else None,
             "is_active": bool(self.is_active) if self.is_active is not None else False,
             "user_type": self.user_type,
@@ -59,20 +61,19 @@ class Exam(Base):
     is_active = Column(Boolean, default=True)
     subjects = relationship("Subject", back_populates="exam")
 
-    def to_dict(self):
+    def to_dict(self, total_questions=0, subject_count=None):
         try:
             created_at = self.created_at.strftime("%Y-%m-%d %H:%M:%S") if self.created_at else None
         except Exception:
             created_at = None
-        total = sum(len(qt.questions) for s in self.subjects for qt in s.quiz_tests)
         return {
             "id": self.id,
             "name": self.name,
             "description": self.description,
             "created_at": created_at,
             "is_active": self.is_active,
-            "subject_count": len(self.subjects),
-            "total_questions": total,
+            "subject_count": subject_count if subject_count is not None else len(self.subjects),
+            "total_questions": total_questions,
         }
 
 
@@ -239,4 +240,11 @@ class UserTestLimit(Base):
     quiz_test = relationship("QuizTest")
 
 
+Base.metadata.create_all(bind=engine)
+
+# Indexes for common query patterns
+Index("ix_subject_exam_id", Subject.exam_id, Subject.is_active)
+Index("ix_quiz_test_subject_id", QuizTest.subject_id, QuizTest.is_active)
+Index("ix_question_quiz_test_id", Question.quiz_test_id)
+Index("ix_test_result_user_quiz", TestResult.user_id, TestResult.quiz_test_id)
 Base.metadata.create_all(bind=engine)

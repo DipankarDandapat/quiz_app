@@ -12,7 +12,20 @@ router = APIRouter()
 @router.get("/exams")
 def get_exams(request: Request, db: Session = Depends(get_db)):
     require_login(request)
-    return [e.to_dict() for e in db.query(Exam).filter_by(is_active=True).all()]
+    exams = db.query(Exam).filter_by(is_active=True).all()
+    # Single query to get total questions per exam
+    counts = db.query(Subject.exam_id, func.count(Question.id))\
+        .join(QuizTest, QuizTest.subject_id == Subject.id)\
+        .join(Question, Question.quiz_test_id == QuizTest.id)\
+        .filter(Subject.exam_id.in_([e.id for e in exams]))\
+        .group_by(Subject.exam_id).all()
+    q_count = {exam_id: cnt for exam_id, cnt in counts}
+    # Single query for subject counts
+    s_counts = db.query(Subject.exam_id, func.count(Subject.id))\
+        .filter(Subject.exam_id.in_([e.id for e in exams]))\
+        .group_by(Subject.exam_id).all()
+    s_count = {exam_id: cnt for exam_id, cnt in s_counts}
+    return [e.to_dict(total_questions=q_count.get(e.id, 0), subject_count=s_count.get(e.id, 0)) for e in exams]
 
 
 @router.get("/exams/{exam_id}")
@@ -50,19 +63,35 @@ def get_subject_quiz_tests(subject_id: int, request: Request, db: Session = Depe
     subject = db.query(Subject).get(subject_id)
     if not subject or not subject.is_active:
         return JSONResponse({"error": "Subject not available"}, 404)
-    from backend.models.models import TestResult, UserTestLimit
     tests = db.query(QuizTest).filter_by(subject_id=subject_id, is_active=True).all()
+    if not tests:
+        return []
+    test_ids = [qt.id for qt in tests]
+    # Bulk query: attempt counts per test
+    attempt_rows = db.query(TestResult.quiz_test_id, func.count(TestResult.id))\
+        .filter(TestResult.user_id == user_id, TestResult.quiz_test_id.in_(test_ids),
+                TestResult.completed_at.isnot(None))\
+        .group_by(TestResult.quiz_test_id).all()
+    attempts_map = {qt_id: cnt for qt_id, cnt in attempt_rows}
+    # Bulk query: best score per test
+    best_rows = db.query(TestResult.quiz_test_id,
+                         func.max(TestResult.score * 100.0 / TestResult.total_questions))\
+        .filter(TestResult.user_id == user_id, TestResult.quiz_test_id.in_(test_ids),
+                TestResult.completed_at.isnot(None))\
+        .group_by(TestResult.quiz_test_id).all()
+    best_map = {qt_id: best for qt_id, best in best_rows}
+    # Bulk query: user limits
+    limits_map = {ul.quiz_test_id: ul.extra_attempts for ul in
+                  db.query(UserTestLimit).filter_by(user_id=user_id)
+                  .filter(UserTestLimit.quiz_test_id.in_(test_ids)).all()}
+    user_obj = db.query(User).get(user_id)
+    global_extra = user_obj.global_extra_attempts if user_obj else 0
     result = []
     for qt in tests:
         d = qt.to_dict()
-        attempts = db.query(TestResult).filter_by(user_id=user_id, quiz_test_id=qt.id).filter(TestResult.completed_at.isnot(None)).count()
-        best = db.query(func.max(TestResult.score * 100.0 / TestResult.total_questions))\
-            .filter_by(user_id=user_id, quiz_test_id=qt.id).filter(TestResult.completed_at.isnot(None)).scalar()
-        user_limit = db.query(UserTestLimit).filter_by(user_id=user_id, quiz_test_id=qt.id).first()
-        user_obj = db.query(User).get(user_id)
-        global_extra = user_obj.global_extra_attempts if user_obj else 0
-        extra = (user_limit.extra_attempts if user_limit else 0) + global_extra
-        d["user_attempts"] = attempts
+        extra = limits_map.get(qt.id, 0) + global_extra
+        d["user_attempts"] = attempts_map.get(qt.id, 0)
+        best = best_map.get(qt.id)
         d["user_best_percentage"] = round(best, 1) if best else None
         d["retake_limit"] = (qt.retake_limit or 1) + extra
         result.append(d)

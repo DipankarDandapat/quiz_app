@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import api from '../api'
 
 function Modal({ title, onClose, children, footer }) {
@@ -91,7 +91,7 @@ export function SubjectModal({ examId, subject, onClose, onSaved, showAlert }) {
   }
 
   // Load practice test settings when editing
-  useState(() => {
+  useEffect(() => {
     if (subject && subject.subject_type === 'practice') {
       api.get(`/subjects/${subject.id}/practice-test`).then(r => {
         setTimeLimit(r.data.time_limit_minutes || 30)
@@ -100,7 +100,7 @@ export function SubjectModal({ examId, subject, onClose, onSaved, showAlert }) {
         setMarksNegative(r.data.marks_negative ?? 0)
       }).catch(() => {})
     }
-  })
+  }, [])
 
   const typeInfo = {
     subject: { icon: 'fa-book-open', color: '#0ea5e9', label: 'Subject' },
@@ -190,7 +190,7 @@ export function TestModal({ subjectId, testId, onClose, onSaved, showAlert }) {
   const [shuffleA, setShuffleA] = useState(false)
   const [loaded, setLoaded] = useState(!testId)
 
-  useState(() => {
+  useEffect(() => {
     if (testId) {
       api.get(`/quiz-tests/${testId}`).then(r => {
         const t = r.data
@@ -200,7 +200,7 @@ export function TestModal({ subjectId, testId, onClose, onSaved, showAlert }) {
         setLoaded(true)
       })
     }
-  })
+  }, [])
 
   async function save() {
     if (!name.trim()) { showAlert('Test name is required', 'error'); return }
@@ -459,9 +459,9 @@ export function UploadModal({ testId, onClose, onSaved, showAlert }) {
 export function FlagDetailsModal({ questionId, onClose }) {
   const [data, setData] = useState(null)
 
-  useState(() => {
+  useEffect(() => {
     api.get(`/admin/questions/${questionId}/flag-details`).then(r => setData(r.data))
-  })
+  }, [questionId])
 
   return (
     <div className="modal-overlay" style={{ zIndex: 2000 }}>
@@ -570,7 +570,7 @@ export function UserLimitModal({ testId, testName, retakeLimit, onClose, showAle
     setLoading(false)
   }
 
-  useState(() => { load() })
+  useEffect(() => { load() }, [])
 
   const filtered = allUsers.filter(u =>
     u.username.toLowerCase().includes(search.toLowerCase()) ||
